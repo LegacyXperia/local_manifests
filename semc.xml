@@ -31,7 +31,4 @@
   <project name="cm42semc/android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="cm-10.1" />
   <project name="cm42semc/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" remote="github" revision="cm-10.1" />
   <project name="cm42semc/android_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="cm-10.1" />
-
-  <remove-project name="CyanogenMod/android_vendor_cm" />
-  <project name="androidarmv6/android_vendor_cm" path="vendor/cm" remote="github" revision="cm-10.1" />
 </manifest>
