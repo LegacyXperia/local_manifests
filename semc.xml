@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="CyanogenMod/android_device_common" />
+  <project name="cm42semc/android_device_common" path="device/common" remote="github" revision="cm-10.1" />
+
+  <project name="cm42semc/android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" remote="github" revision="cm-10.1" />
+  <project name="cm42semc/android_device_semc_mogami-common" path="device/semc/mogami-common" remote="github" revision="cm-10.1" />
+  <project name="cm42semc/android_device_semc_smultron" path="device/semc/smultron" remote="github" revision="cm-10.1" />
+
+  <project name="cm42semc/semc-kernel-msm7x30" path="kernel/semc/msm7x30" remote="github" revision="cm-10.1" />
+
+  <project name="TheMuppets/proprietary_vendor_semc" path="vendor/semc" remote="github" revision="jellybean" />
+
+  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/somc/dash" remote="github" revision="jellybean" />
+  <project name="CyanogenMod/android_hardware_ti_fmradio" path="hardware/ti/fmradio" remote="github" revision="jellybean" />
+
+  <remove-project name="CyanogenMod/android_frameworks_av" />
+  <remove-project name="CyanogenMod/android_frameworks_base" />
+  <remove-project name="CyanogenMod/android_frameworks_native" />
+  <project name="cm42semc/android_frameworks_av" path="frameworks/av" remote="github" revision="cm-10.1" />
+  <project name="androidarmv6/android_frameworks_base" path="frameworks/base" remote="github" revision="cm-10.1" />
+  <project name="cm42semc/android_frameworks_native" path="frameworks/native" remote="github" revision="cm-10.1" />
+
+  <remove-project name="CyanogenMod/android_hardware_libhardware" />
+  <remove-project name="CyanogenMod/android_hardware_msm7k" />
+  <project name="Andromadus/android_hardware_libhardware" path="hardware/libhardware" remote="github" revision="cm10.1" />
+  <project name="androidarmv6/android_hardware_msm7k" path="hardware/msm7k" remote="github" revision="cm-10.1" />
+
+  <remove-project name="CyanogenMod/android_hardware_qcom_display" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_media" />
+  <project name="cm42semc/android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="cm-10.1" />
+  <project name="cm42semc/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" remote="github" revision="cm-10.1" />
+  <project name="cm42semc/android_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="cm-10.1" />
+
+  <remove-project name="CyanogenMod/android_vendor_cm" />
+  <project name="androidarmv6/android_vendor_cm" path="vendor/cm" remote="github" revision="cm-10.1" />
+</manifest>
