@@ -6,7 +6,7 @@
 
   <project name="mikeNG/semc-kernel-msm7x30" path="kernel/semc/msm7x30" remote="github" revision="cm-10.1" />
 
-  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/somc/dash" remote="github" revision="jellybean" />
+  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/somc/dash" remote="github" revision="cm-10.1" />
   <project name="CyanogenMod/android_hardware_ti_fmradio" path="hardware/ti/fmradio" remote="github" revision="jellybean" />
 
   <project name="TheMuppets/proprietary_vendor_semc" path="vendor/semc" remote="github" revision="jellybean" />
