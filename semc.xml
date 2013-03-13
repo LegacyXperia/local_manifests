@@ -17,7 +17,7 @@
   <project name="semc7x30/android_device_semc_satsuma" path="device/semc/satsuma" remote="github" revision="cm-10.1" />
   <project name="semc7x30/android_device_semc_smultron" path="device/semc/smultron" remote="github" revision="cm-10.1" />
 
-  <project name="cm42semc/semc-kernel-msm7x30" path="kernel/semc/msm7x30" remote="github" revision="cm-10.1" />
+  <project name="cm42semc/semc-kernel-msm7x30" path="kernel/semc/msm7x30" remote="github" revision="mr1-staging" />
 
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/somc/dash" remote="github" revision="cm-10.1" />
   <project name="CyanogenMod/android_hardware_ti_fmradio" path="hardware/ti/fmradio" remote="github" revision="jellybean" />
