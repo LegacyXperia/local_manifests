@@ -29,10 +29,16 @@
   <remove-project name="CyanogenMod/android_frameworks_native" />
   <project name="cm42semc/android_frameworks_native" path="frameworks/native" remote="github" revision="cm-10.1" />
 
+  <remove-project name="CyanogenMod/android_hardware_libhardware" />
+  <project name="Andromadus/android_hardware_libhardware" path="hardware/libhardware" remote="github" revision="cm10.1" />
+
   <remove-project name="CyanogenMod/android_hardware_qcom_display" />
   <project name="cm42semc/android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="cm-10.1" />
   <project name="cm42semc/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" remote="github" revision="cm-10.1" />
 
   <remove-project name="CyanogenMod/android_hardware_qcom_media" />
   <project name="cm42semc/android_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="cm-10.1" />
+  
+  <remove-project name="CyanogenMod/android_packages_apps_Gallery2" />
+  <project name="cm42semc/android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="github" revision="cm-10.1" />
 </manifest>
