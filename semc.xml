@@ -29,14 +29,12 @@
   <remove-project name="CyanogenMod/android_frameworks_av" />
   <remove-project name="CyanogenMod/android_frameworks_native" />
   <remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
-  <remove-project name="CyanogenMod/android_hardware_libhardware" />
   <remove-project name="CyanogenMod/android_hardware_qcom_display" />
   <remove-project name="CyanogenMod/android_hardware_qcom_media" />
 
   <project name="cm42semc/android_frameworks_av" path="frameworks/av" />
   <project name="cm42semc/android_frameworks_native" path="frameworks/native" />
   <project name="semc7x30/android_frameworks_opt_telephony" path="frameworks/opt/telephony" />
-  <project name="cm42semc/android_hardware_libhardware" path="hardware/libhardware" />
   <project name="cm42semc/android_hardware_qcom_display" path="hardware/qcom/display" />
   <project name="cm42semc/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" />
   <project name="cm42semc/android_hardware_qcom_media" path="hardware/qcom/media" />
