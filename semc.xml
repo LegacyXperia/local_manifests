@@ -32,7 +32,7 @@
   <remove-project name="CyanogenMod/android_hardware_qcom_display" />
   <remove-project name="CyanogenMod/android_hardware_qcom_media" />
 
-  <project name="cm42semc/android_frameworks_av" path="frameworks/av" />
+  <project name="semc7x30/android_frameworks_av" path="frameworks/av" />
   <project name="cm42semc/android_frameworks_native" path="frameworks/native" />
   <project name="semc7x30/android_frameworks_opt_telephony" path="frameworks/opt/telephony" />
   <project name="cm42semc/android_hardware_qcom_display" path="hardware/qcom/display" />
