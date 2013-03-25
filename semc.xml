@@ -21,6 +21,6 @@
 
   <project name="TheMuppets/proprietary_vendor_semc" path="vendor/semc" revision="jellybean" />
 
-  <project name="cm42semc/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" />
-  <project name="cm42semc/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" />
+  <project name="arco/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" />
+  <project name="arco/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" />
 </manifest>
