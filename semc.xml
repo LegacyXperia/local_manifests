@@ -14,7 +14,7 @@
   <project name="semc7x30/android_device_semc_satsuma" path="device/semc/satsuma" />
   <project name="semc7x30/android_device_semc_smultron" path="device/semc/smultron" />
 
-  <project name="semc7x30/semc-kernel-msm7x30" path="kernel/semc/msm7x30" />
+  <project name="mikeNG/semc-kernel-msm7x30" path="kernel/semc/msm7x30" />
 
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
   <project name="CyanogenMod/android_hardware_ti_fmradio" path="hardware/ti/fmradio" revision="jellybean" />
