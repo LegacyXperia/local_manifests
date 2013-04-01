@@ -36,6 +36,5 @@ Pending changes on CM gerrit:
 -------------
 * http://review.cyanogenmod.org/32581 Externalize symbol picker options to resources
 * http://review.cyanogenmod.org/32906 libstagefright: support for disabling buffer metadata
-* http://review.cyanogenmod.org/30269 Fix building of hwcomposer for msm devices
 * http://review.cyanogenmod.org/31329 sensorservice: Add legacy sensors fusion (untested)
 * http://review.cyanogenmod.org/28336 LegacyCamera: Load correct panorama JNI libs
