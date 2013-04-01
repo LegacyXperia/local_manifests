@@ -25,12 +25,12 @@ Working:
 
 Not working:
 -------------
-* ALS
+* ALS (Disabled)
 * Bluetooth
 * Wifi hotspot
 * FM Radio
-* Buggy camera
-
+* 4.2 camera
+* Panorama in LegacyCamera
 
 Pending changes on CM gerrit:
 -------------
@@ -38,3 +38,4 @@ Pending changes on CM gerrit:
 * http://review.cyanogenmod.org/32906 libstagefright: support for disabling buffer metadata
 * http://review.cyanogenmod.org/30269 Fix building of hwcomposer for msm devices
 * http://review.cyanogenmod.org/31329 sensorservice: Add legacy sensors fusion (untested)
+* http://review.cyanogenmod.org/28336 LegacyCamera: Load correct panorama JNI libs
