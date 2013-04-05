@@ -12,10 +12,12 @@ Working:
 -------------
 * Touchscreen
 * Wifi
+* Wifi hotspot
 * Ril 2g & 3g
 * SMS/MMS
 * Accelerometer
 * Proximity sensor
+* Light sensor
 * Audio
 * Headphones
 * Led
@@ -25,9 +27,7 @@ Working:
 
 Not working:
 -------------
-* ALS (Disabled)
 * Bluetooth
-* Wifi hotspot
 * FM Radio
 * 4.2 camera
 * Panorama in LegacyCamera
@@ -36,5 +36,7 @@ Pending changes on CM gerrit:
 -------------
 * http://review.cyanogenmod.org/32581 Externalize symbol picker options to resources
 * http://review.cyanogenmod.org/32906 libstagefright: support for disabling buffer metadata
-* http://review.cyanogenmod.org/31329 sensorservice: Add legacy sensors fusion (untested)
 * http://review.cyanogenmod.org/28336 LegacyCamera: Load correct panorama JNI libs
+* http://review.cyanogenmod.org/35155 wpa_supplicant_8 - Hostapd: Android related changes for sockets
+* http://review.cyanogenmod.org/34989 msm7x30: Add support for SEMC FM radio
+* http://review.cyanogenmod.org/33173 fmradio: Workaround for routing to speaker phone
