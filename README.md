@@ -39,4 +39,3 @@ Pending changes on CM gerrit:
 * http://review.cyanogenmod.org/28336 LegacyCamera: Load correct panorama JNI libs
 * http://review.cyanogenmod.org/35155 wpa_supplicant_8 - Hostapd: Android related changes for sockets
 * http://review.cyanogenmod.org/34989 msm7x30: Add support for SEMC FM radio
-* http://review.cyanogenmod.org/33173 fmradio: Workaround for routing to speaker phone
