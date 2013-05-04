@@ -21,7 +21,6 @@
   <project name="mikeNG/msm7x30-3.0.x-nAa" path="kernel/semc/msm7x30" />
 
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" revision="jellybean" />
-  <project name="CyanogenMod/android_hardware_ti_fmradio" path="hardware/ti/fmradio" revision="jellybean" />
 
   <project name="semc7x30/proprietary_vendor_semc" path="vendor/semc" />
 
