@@ -2,7 +2,6 @@
 <manifest>
   <project name="semc7x30/android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" />
   <project name="semc7x30/android_device_semc_mogami-common" path="device/semc/mogami-common" />
-  <project name="semc7x30/android_device_semc_zeus-common" path="device/semc/zeus-common" />
 
   <project name="semc7x30/android_device_semc_anzu" path="device/semc/anzu" />
   <project name="semc7x30/android_device_semc_haida" path="device/semc/haida" />
@@ -10,14 +9,17 @@
   <project name="semc7x30/android_device_semc_iyokan" path="device/semc/iyokan" />
   <project name="semc7x30/android_device_semc_phoenix" path="device/semc/phoenix" />
   <project name="semc7x30/android_device_semc_urushi" path="device/semc/urushi" />
-  <project name="semc7x30/android_device_semc_zeus" path="device/semc/zeus" />
-  <project name="semc7x30/android_device_semc_zeusc" path="device/semc/zeusc" />
 
   <project name="semc7x30/android_device_semc_coconut" path="device/semc/coconut" />
   <project name="semc7x30/android_device_semc_mango" path="device/semc/mango" />
   <project name="semc7x30/android_device_semc_satsuma" path="device/semc/satsuma" />
   <project name="semc7x30/android_device_semc_smultron" path="device/semc/smultron" />
 
+  <!-- zeus is not supported yet -->
+  <project name="semc7x30/android_device_semc_zeus-common" path="device/semc/zeus-common" />
+  <project name="semc7x30/android_device_semc_zeus" path="device/semc/zeus" />
+  <project name="semc7x30/android_device_semc_zeusc" path="device/semc/zeusc" />
+  
   <project name="mikeNG/msm7x30-3.0.x-nAa" path="kernel/semc/msm7x30" />
 
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" revision="jellybean" />
@@ -26,4 +28,10 @@
 
   <project name="arco/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-10.1_old" />
   <project name="arco/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-10.1_old" />
+
+  <!-- Bleeding edge repos from omapzoom -->
+  <remove-project name="CyanogenMod/android_hardware_ti_wpan" />
+  <remove-project name="CyanogenMod/android_external_wpa_supplicant_8_ti" />
+  <project name="semc7x30/android_hardware_ti_wpan" path="hardware/ti/wpan" />
+  <project name="semc7x30/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" />
 </manifest>
