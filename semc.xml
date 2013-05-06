@@ -34,4 +34,7 @@
   <remove-project name="CyanogenMod/android_external_wpa_supplicant_8_ti" />
   <project name="semc7x30/android_hardware_ti_wpan" path="hardware/ti/wpan" />
   <project name="semc7x30/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" />
+  
+  <!-- Build iw from source -->
+  <project name="br101/android_external_iw" path="external/iw" revision="master" />
 </manifest>
