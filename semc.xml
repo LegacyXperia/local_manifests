@@ -20,7 +20,7 @@
   <project name="semc7x30/android_device_semc_zeus" path="device/semc/zeus" />
   <project name="semc7x30/android_device_semc_zeusc" path="device/semc/zeusc" />
   
-  <project name="semc7x30/msm7x30-3.0.x-nAa" path="kernel/semc/msm7x30" />
+  <project name="semc7x30/msm7x30-3.4.x-nAa" path="kernel/semc/msm7x30" />
 
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" revision="jellybean" />
 
