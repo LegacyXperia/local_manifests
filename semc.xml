@@ -37,7 +37,7 @@
   
   <!-- TI wlan -->
   <remove-project name="CyanogenMod/android_hardware_ti_wlan" />
-  <project name="LegacyXperia/android_hardware_ti_wlan" path="hardware/ti/wlan" />
+  <project name="LegacyXperia/android_hardware_ti_wlan" path="hardware/ti/wlan" revision="cm-10.1-omapzoom"/>
   
   <!-- Build iw from source -->
   <project name="br101/android_external_iw" path="external/iw" revision="master" />
