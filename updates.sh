@@ -4,6 +4,9 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
+cd ${android}/system/core
+# init: Fix serial number on semc bootloaders
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_core refs/changes/74/38174/1 && git cherry-pick FETCH_HEAD
 
 cd ${android}/hardware/qcom/audio-caf
 # audio/msm7x30: Updates for MR2
