@@ -10,7 +10,9 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_core refs/cha
 
 cd ${android}/hardware/qcom/audio-caf
 # audio/msm7x30: Updates for MR2
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/87/46087/2 && git cherry-pick FETCH_HEAD
+#git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/87/46087/2 && git cherry-pick FETCH_HEAD
+# msm7x30: use policy manager from ALSA
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/84/47484/2 && git cherry-pick FETCH_HEAD
 
 cd ${android}/frameworks/av
 # libstagefright: support for disabling buffer metadata
