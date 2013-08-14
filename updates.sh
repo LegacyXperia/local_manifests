@@ -19,3 +19,7 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/c
 cd ${android}/frameworks/native
 # surfaceflinger: enable EGL_NEEDS_FNW for qcom legacy
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/59/47259/1 && git cherry-pick FETCH_HEAD
+
+cd ${android}/dalvik
+# dalvik/vm: Dalvik startup with a low memory footprint
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_dalvik refs/changes/56/47756/1 && git cherry-pick FETCH_HEAD
