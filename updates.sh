@@ -20,7 +20,3 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native re
 cd ${android}/dalvik
 # dalvik/vm: Dalvik startup with a low memory footprint
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_dalvik refs/changes/57/47757/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/frameworks/base
-# Reduce total number of background apps for low memory devices
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/88/47288/1 && git cherry-pick FETCH_HEAD
