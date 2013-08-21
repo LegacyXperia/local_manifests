@@ -41,10 +41,4 @@
   
   <!-- Build iw from source -->
   <project name="br101/android_external_iw" path="external/iw" revision="master" />
-  
-  <!-- HACK: Fix 4.2 camera preview -->
-  <remove-project name="CyanogenMod/android_packages_apps_Camera" />
-  <remove-project name="CyanogenMod/android_packages_apps_Gallery2" />
-  <project name="LegacyXperia/android_packages_apps_Camera" path="packages/apps/Camera" />
-  <project name="LegacyXperia/android_packages_apps_Gallery2" path="packages/apps/Gallery2" />
 </manifest>
