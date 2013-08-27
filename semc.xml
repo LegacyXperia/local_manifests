@@ -14,7 +14,6 @@
   <project name="LegacyXperia/android_device_semc_satsuma" path="device/semc/satsuma" />
   <project name="LegacyXperia/android_device_semc_smultron" path="device/semc/smultron" />
 
-  <!-- zeus is not supported yet -->
   <project name="LegacyXperia/android_device_semc_zeus-common" path="device/semc/zeus-common" />
   <project name="LegacyXperia/android_device_semc_phoenix" path="device/semc/phoenix" />
   <project name="LegacyXperia/android_device_semc_zeus" path="device/semc/zeus" />
