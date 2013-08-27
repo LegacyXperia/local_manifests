@@ -14,7 +14,7 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery re
 
 cd ${android}/hardware/qcom/audio-caf
 # msm7x30: disable logcat spam
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/02/48202/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/02/48202/2 && git cherry-pick FETCH_HEAD
 
 cd ${android}/frameworks/av
 # libstagefright: support for disabling buffer metadata
