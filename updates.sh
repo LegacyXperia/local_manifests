@@ -12,10 +12,6 @@ cd ${android}/bootable/recovery
 # "not enough rainbows, 1 star uninstall"
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/64/49064/1 && git cherry-pick FETCH_HEAD
 
-cd ${android}/hardware/qcom/audio-caf
-# msm7x30: disable logcat spam
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/02/48202/2 && git cherry-pick FETCH_HEAD
-
 cd ${android}/frameworks/av
 # libstagefright: support for disabling buffer metadata
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/95/46495/1 && git cherry-pick FETCH_HEAD
