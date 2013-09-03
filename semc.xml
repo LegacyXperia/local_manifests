@@ -37,5 +37,5 @@
   <project name="LegacyXperia/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" />
 
   <!-- Build iw from source -->
-  <project name="br101/android_external_iw" path="external/iw" revision="master" />
+  <project name="LegacyXperia/android_external_iw" path="external/iw" />
 </manifest>
