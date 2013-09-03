@@ -39,5 +39,5 @@
   <project name="LegacyXperia/android_hardware_ti_wlan" path="hardware/ti/wlan" revision="cm-10.1-omapzoom"/>
   
   <!-- Build iw from source -->
-  <project name="br101/android_external_iw" path="external/iw" revision="master" />
+  <project name="LegacyXperia/android_external_iw" path="external/iw" />
 </manifest>
