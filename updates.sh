@@ -12,6 +12,10 @@ cd ${android}/bootable/recovery
 # "not enough rainbows, 1 star uninstall"
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/64/49064/1 && git cherry-pick FETCH_HEAD
 
+cd ${android}/frameworks/base
+# Add support for Xperia Play touchpads
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/10/49310/1 && git cherry-pick FETCH_HEAD
+
 cd ${android}/frameworks/av
 # libstagefright: support for disabling buffer metadata
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/95/46495/1 && git cherry-pick FETCH_HEAD
