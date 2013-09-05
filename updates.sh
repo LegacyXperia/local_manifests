@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ~/bin/build-10.1.sh
+
 if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
