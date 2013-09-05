@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ~/bin/build-10.2.sh
+source ~/bin/paths-10.2.sh
 
 if [ "${android}" = "" ]; then
 	android=~/android/system
