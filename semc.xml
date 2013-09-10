@@ -32,7 +32,7 @@
   <remove-project name="CyanogenMod/android_hardware_ti_wlan" />
   <remove-project name="CyanogenMod/android_hardware_ti_wpan" />
   <remove-project name="CyanogenMod/android_external_wpa_supplicant_8_ti" />
-  <project name="LegacyXperia/android_hardware_ti_wlan" path="hardware/ti/wlan" revision="cm-10.1-omapzoom"/>
+  <project name="LegacyXperia/android_hardware_ti_wlan" path="hardware/ti/wlan" />
   <project name="LegacyXperia/android_hardware_ti_wpan" path="hardware/ti/wpan" />
   <project name="LegacyXperia/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" />
 
