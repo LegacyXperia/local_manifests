@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="LegacyXperia/android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" />
-  <project name="LegacyXperia/android_device_semc_mogami-common" path="device/semc/mogami-common" />
 
+  <project name="LegacyXperia/android_device_semc_mogami-common" path="device/semc/mogami-common" />
   <project name="LegacyXperia/android_device_semc_anzu" path="device/semc/anzu" />
+  <project name="LegacyXperia/android_device_semc_coconut" path="device/semc/coconut" />
   <project name="LegacyXperia/android_device_semc_haida" path="device/semc/haida" />
   <project name="LegacyXperia/android_device_semc_hallon" path="device/semc/hallon" />
   <project name="LegacyXperia/android_device_semc_iyokan" path="device/semc/iyokan" />
-  <project name="LegacyXperia/android_device_semc_urushi" path="device/semc/urushi" />
-
-  <project name="LegacyXperia/android_device_semc_coconut" path="device/semc/coconut" />
   <project name="LegacyXperia/android_device_semc_mango" path="device/semc/mango" />
   <project name="LegacyXperia/android_device_semc_satsuma" path="device/semc/satsuma" />
   <project name="LegacyXperia/android_device_semc_smultron" path="device/semc/smultron" />
+  <project name="LegacyXperia/android_device_semc_urushi" path="device/semc/urushi" />
 
   <project name="LegacyXperia/android_device_semc_zeus-common" path="device/semc/zeus-common" />
   <project name="LegacyXperia/android_device_semc_phoenix" path="device/semc/phoenix" />
