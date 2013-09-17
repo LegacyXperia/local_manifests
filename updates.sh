@@ -32,10 +32,6 @@ cd ${android}/frameworks/av
 # camera: Fix preview on SEMC msm7x30 devices
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/73/48673/1 && git cherry-pick FETCH_HEAD
 
-cd ${android}/frameworks/native
-# surfaceflinger: Fix legacy qcom display
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/17/50417/2 && git cherry-pick FETCH_HEAD
-
 cd ${android}/hardware/qcom/gps
 # libloc_api: Fix some compiler warnings
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_gps refs/changes/53/49853/1 && git cherry-pick FETCH_HEAD
