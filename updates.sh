@@ -43,9 +43,3 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_build refs/changes/1
 cd ${android}/vendor/cm
 # cm: update VideoEditor & live wallpapers packages
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_vendor_cm refs/changes/15/50415/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/hardware/ti/wlan
-# WLAN - compat_wl12xx: more file cleanups
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/70/50770/1 && git cherry-pick FETCH_HEAD
-# WLAN - wl12xx: Update to R5.SP5.01 from R5.SP3.06 package
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/71/50771/2 && git cherry-pick FETCH_HEAD
