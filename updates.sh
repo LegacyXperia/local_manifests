@@ -17,6 +17,10 @@ cd ${android}/bootable/recovery
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/64/49064/1 && git cherry-pick FETCH_HEAD
 # recovery: support format external storage to custom fstype using vold
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/99/49899/3 && git cherry-pick FETCH_HEAD
+# Fix extract of tgz multi volumes corruption at split point
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/01/50501/1 && git cherry-pick FETCH_HEAD
+# Fix refresh usb devices when key repeat is enabled
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/99/50599/2 && git cherry-pick FETCH_HEAD
 
 cd ${android}/system/vold
 # vold: Use quick format for NTFS volumes
@@ -25,8 +29,6 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_vold refs/cha
 cd ${android}/frameworks/base
 # Add support for Xperia Play touchpads
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/10/49310/1 && git cherry-pick FETCH_HEAD
-# Navbar: Fix MDPI & HDPI landscape layout
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/00/50200/2 && git cherry-pick FETCH_HEAD
 
 cd ${android}/frameworks/av
 # camera: Fix preview on SEMC msm7x30 devices
