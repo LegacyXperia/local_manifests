@@ -15,12 +15,12 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_core refs/cha
 cd ${android}/bootable/recovery
 # "not enough rainbows, 1 star uninstall"
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/64/49064/1 && git cherry-pick FETCH_HEAD
+# Make updating Advanced Menu a simpler task
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/13/50113/3 && git cherry-pick FETCH_HEAD
 # recovery: support format external storage to custom fstype using vold
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/99/49899/3 && git cherry-pick FETCH_HEAD
 # Fix extract of tgz multi volumes corruption at split point
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/01/50501/1 && git cherry-pick FETCH_HEAD
-# Fix refresh usb devices when key repeat is enabled
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/99/50599/2 && git cherry-pick FETCH_HEAD
 
 cd ${android}/system/vold
 # vold: Use quick format for NTFS volumes
