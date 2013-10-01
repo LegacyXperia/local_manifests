@@ -47,3 +47,11 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_netd refs/cha
 cd ${android}/external/wpa_supplicant_8_ti
 # Squashed update to ol_R5.SP5.01
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/23/51223/1 && git cherry-pick FETCH_HEAD
+
+cd ${android}/build
+# build: remove VideoEditor & live wallpapers from full_base
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_build refs/changes/19/50419/1 && git cherry-pick FETCH_HEAD
+
+cd ${android}/vendor/cm
+# cm: update VideoEditor & live wallpapers packages
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_vendor_cm refs/changes/18/50418/1 && git cherry-pick FETCH_HEAD
