@@ -8,10 +8,6 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-cd ${android}/system/core
-# init: Fix serial number on semc bootloaders
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_core refs/changes/10/50410/1 && git cherry-pick FETCH_HEAD
-
 cd ${android}/bootable/recovery
 # "not enough rainbows, 1 star uninstall"
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/64/49064/1 && git cherry-pick FETCH_HEAD
@@ -22,17 +18,13 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery re
 # Fix extract of tgz multi volumes corruption at split point
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/01/50501/1 && git cherry-pick FETCH_HEAD
 
-cd ${android}/system/vold
-# vold: Use quick format for NTFS volumes
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_vold refs/changes/20/49920/3 && git cherry-pick FETCH_HEAD
-
 cd ${android}/frameworks/base
 # Add support for Xperia Play touchpads
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/10/49310/1 && git cherry-pick FETCH_HEAD
 
 cd ${android}/frameworks/av
 # camera: Fix preview on SEMC msm7x30 devices
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/73/48673/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/73/48673/2 && git cherry-pick FETCH_HEAD
 
 cd ${android}/hardware/ti/wlan
 # compat-wireless: turn on TESTMODE and MAC DEBUGFS, turn off BT
@@ -57,11 +49,3 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_netd refs/cha
 cd ${android}/external/wpa_supplicant_8_ti
 # Squashed update to ol_R5.SP5.01
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/29/51129/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/build
-# build: remove VideoEditor & live wallpapers from full_base
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_build refs/changes/14/50414/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/vendor/cm
-# cm: update VideoEditor & live wallpapers packages
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_vendor_cm refs/changes/15/50415/1 && git cherry-pick FETCH_HEAD
