@@ -27,8 +27,6 @@
   <project name="LegacyXperia/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" />
   <project name="LegacyXperia/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" />
 
-  <remove-project name="CyanogenMod/android_hardware_ti_wlan" />
-  <project name="LegacyXperia/android_hardware_ti_wlan" path="hardware/ti/wlan" />
   <remove-project name="CyanogenMod/android_hardware_ti_wpan" />
   <project name="LegacyXperia/android_hardware_ti_wpan" path="hardware/ti/wpan" />
 
