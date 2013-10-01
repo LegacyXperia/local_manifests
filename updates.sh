@@ -10,13 +10,7 @@ fi
 
 cd ${android}/bootable/recovery
 # "not enough rainbows, 1 star uninstall"
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/64/49064/1 && git cherry-pick FETCH_HEAD
-# Make updating Advanced Menu a simpler task
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/13/50113/3 && git cherry-pick FETCH_HEAD
-# recovery: support format external storage to custom fstype using vold
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/99/49899/3 && git cherry-pick FETCH_HEAD
-# Fix extract of tgz multi volumes corruption at split point
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/01/50501/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/64/49064/2 && git cherry-pick FETCH_HEAD
 
 cd ${android}/frameworks/base
 # Add support for Xperia Play touchpads
