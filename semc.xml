@@ -29,6 +29,4 @@
 
   <remove-project name="CyanogenMod/android_hardware_ti_wpan" />
   <project name="LegacyXperia/android_hardware_ti_wpan" path="hardware/ti/wpan" />
-
-  <project name="LegacyXperia/android_external_iw" path="external/iw" />
 </manifest>
