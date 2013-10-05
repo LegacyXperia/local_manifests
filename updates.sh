@@ -51,3 +51,5 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_DSPMan
 cd ${android}/system/vold
 # Make sure to exit with _exit from child
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_vold refs/changes/85/51385/1 && git cherry-pick FETCH_HEAD
+# Ensure vold doesn't hang when a child process dies
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_vold refs/changes/87/51387/1 && git cherry-pick FETCH_HEAD
