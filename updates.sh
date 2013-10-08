@@ -30,7 +30,7 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan ref
 # hostapd.conf: add RX-STBC1 support
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/02/51102/1 && git cherry-pick FETCH_HEAD
 # wl12xx: Import firmware & ini files from ol_R5.SP5.01
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/18/51218/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/18/51218/2 && git cherry-pick FETCH_HEAD
 
 cd ${android}/system/netd
 # SoftapControllerTI: enable advanced SoftAP solution
@@ -42,8 +42,4 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_netd refs/cha
 
 cd ${android}/external/wpa_supplicant_8_ti
 # Squashed update to ol_R5.SP5.01
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/23/51223/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/packages/apps/DSPManager
-# Make DSPManager persistent service
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_DSPManager refs/changes/84/51384/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/23/51223/2 && git cherry-pick FETCH_HEAD
