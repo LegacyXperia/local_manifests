@@ -8,6 +8,10 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
+cd ${android}/bootable/recovery
+# fix wired bugs due to new fs_mgr, vold and virtual device paths
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/12/51312/7 && git cherry-pick FETCH_HEAD
+
 cd ${android}/frameworks/base
 # Add support for Xperia Play touchpads
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/10/49310/1 && git cherry-pick FETCH_HEAD
@@ -41,3 +45,5 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_netd refs/cha
 cd ${android}/external/wpa_supplicant_8_ti
 # Squashed update to ol_R5.SP5.01
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/29/51129/2 && git cherry-pick FETCH_HEAD
+# Fix build warning about annotated tags.
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/93/51493/2 && git cherry-pick FETCH_HEAD
