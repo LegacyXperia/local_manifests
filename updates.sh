@@ -45,3 +45,5 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_system_netd refs/cha
 cd ${android}/external/wpa_supplicant_8_ti
 # Squashed update to ol_R5.SP5.01
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/23/51223/2 && git cherry-pick FETCH_HEAD
+# Fix build warning about annotated tags.
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/33/51633/1 && git cherry-pick FETCH_HEAD
