@@ -10,7 +10,9 @@ fi
 
 cd ${android}/bootable/recovery
 # fix wired bugs due to new fs_mgr, vold and virtual device paths
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/12/51312/7 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/12/51312/9 && git cherry-pick FETCH_HEAD
+# - friendly write_recovery_version()
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/06/51706/1 && git cherry-pick FETCH_HEAD
 
 cd ${android}/frameworks/base
 # Add support for Xperia Play touchpads
