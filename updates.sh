@@ -15,10 +15,6 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery re
 cd ${android}/frameworks/base
 # Add support for Xperia Play touchpads
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/03/45903/4 && git cherry-pick FETCH_HEAD
-# Navbar: Fix MDPI & HDPI landscape layout
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/01/50201/3 && git cherry-pick FETCH_HEAD
-# Fix status bar brightness control when on secure lock screen
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/95/50695/2 && git cherry-pick FETCH_HEAD
 # Lower the RAM requirement for hardware acceleration
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/88/51488/1 && git cherry-pick FETCH_HEAD
 
