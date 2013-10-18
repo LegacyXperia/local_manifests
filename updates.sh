@@ -43,3 +43,11 @@ cd ${android}/external/wpa_supplicant_8_ti
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/23/51223/2 && git cherry-pick FETCH_HEAD
 # Fix build warning about annotated tags.
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/33/51633/1 && git cherry-pick FETCH_HEAD
+
+cd ${android}/hardware/qcom/gps
+# libloc_api: Reduce debug level
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_gps refs/changes/94/51894/1 && git cherry-pick FETCH_HEAD
+
+cd ${android}/hardware/msm7k
+# librpc: Reduce debug messages
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_msm7k refs/changes/96/51896/1 && git cherry-pick FETCH_HEAD
