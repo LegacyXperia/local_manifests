@@ -29,10 +29,4 @@
 
   <remove-project name="CyanogenMod/android_hardware_ti_wpan" />
   <project name="LegacyXperia/android_hardware_ti_wpan" path="hardware/ti/wpan" />
-
-  <project name="ant-wireless/Android_build" path="external/ant-wireless/build" revision="refs/tags/Android_System_Package_3-0-0" />
-  <project name="ant-wireless/Android_ANTHALService" path="external/ant-wireless/ANTHALService" revision="refs/tags/Android_System_Package_3-0-0" />
-  <project name="ant-wireless/Android_ANTRadioService" path="external/ant-wireless/ANTRadioService" revision="refs/tags/Android_System_Package_3-0-0" />
-  <project name="ant-wireless/Android_antradio-library" path="external/ant-wireless/antradio-library" revision="refs/tags/Android_System_Package_3-0-0" />
-  <project name="ant-wireless/Linux_ant-hal" path="external/ant-wireless/ant-hal" revision="refs/tags/Android_System_Package_3-0-0" />
 </manifest>
