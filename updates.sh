@@ -27,8 +27,6 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan ref
 cd ${android}/external/wpa_supplicant_8_ti
 # Squashed update to ol_R5.SP5.01
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/29/51129/2 && git cherry-pick FETCH_HEAD
-# Fix build warning about annotated tags.
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/93/51493/2 && git cherry-pick FETCH_HEAD
 
 cd ${android}/hardware/qcom/gps
 # libloc_api: Reduce debug level
