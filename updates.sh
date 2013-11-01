@@ -18,7 +18,7 @@ cd ${android}/frameworks/av
 # camera: Fix preview on SEMC msm7x30 devices
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/73/48673/2 && git cherry-pick FETCH_HEAD
 
-cd ${android}/frameworks/av
+cd ${android}/frameworks/native
 # Revert "installd: Skip dexroot-on-cache for user builds"
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/38/52738/1 && git cherry-pick FETCH_HEAD
 
