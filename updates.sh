@@ -22,11 +22,27 @@ cd ${android}/hardware/ti/wlan
 # compat-wireless: turn on TESTMODE and MAC DEBUGFS, turn off BT
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/30/51130/1 && git cherry-pick FETCH_HEAD
 # wl12xx: Import firmware & ini files from ol_R5.SP5.01
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/24/51224/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/24/51224/5 && git cherry-pick FETCH_HEAD
+# wpa_supplicant_lib: add check for TI specific wpa_supplicant
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/07/52707/1 && git cherry-pick FETCH_HEAD
 
-cd ${android}/external/wpa_supplicant_8_ti
-# Squashed update to ol_R5.SP5.01
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/29/51129/2 && git cherry-pick FETCH_HEAD
+cd ${android}/hardware/libhardware_legacy
+# wifi: remove p2p interface on supplicant stop
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_libhardware_legacy refs/changes/30/52530/1 && git cherry-pick FETCH_HEAD
+
+cd ${android}/hardware/ti/wpan
+# Clean up makefiles
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/08/52708/1 && git cherry-pick FETCH_HEAD
+# wpan: fix build issues
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/09/52709/1 && git cherry-pick FETCH_HEAD
+# ti-wpan-nfc-products.mk: Adding the product packages required for NFC
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/10/52710/1 && git cherry-pick FETCH_HEAD
+# Squashed update of kfmapp from d-jb-mr1-release
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/11/52711/1 && git cherry-pick FETCH_HEAD
+# Squashed update of FM app from d-jb-mr1-release
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/12/52712/1 && git cherry-pick FETCH_HEAD
+# ti-wpan-fm-products.mk: Adding the product packages required for FM
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/13/52713/1 && git cherry-pick FETCH_HEAD
 
 cd ${android}/hardware/qcom/gps
 # libloc_api: Reduce debug level
