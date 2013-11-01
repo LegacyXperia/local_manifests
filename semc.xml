@@ -26,4 +26,7 @@
 
   <project name="arco/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-10.2_old" />
   <project name="arco/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-10.2_old" />
+
+  <remove-project name="CyanogenMod/android_external_wpa_supplicant_8_ti" />
+  <project name="mikeNG/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" remote="private" />
 </manifest>
