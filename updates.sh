@@ -20,7 +20,7 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/c
 
 cd ${android}/frameworks/native
 # Revert "installd: Skip dexroot-on-cache for user builds"
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/38/52738/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/38/52738/2 && git cherry-pick FETCH_HEAD
 
 cd ${android}/dalvik
 # Revert "libdex: Skip the dexroot-on-cache stuff for user builds"
