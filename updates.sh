@@ -11,8 +11,6 @@ fi
 cd ${android}/frameworks/base
 # Add support for Xperia Play touchpads
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/10/49310/1 && git cherry-pick FETCH_HEAD
-# Lower the RAM requirement for hardware acceleration
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/88/51488/1 && git cherry-pick FETCH_HEAD
 
 cd ${android}/frameworks/av
 # camera: Fix preview on SEMC msm7x30 devices
