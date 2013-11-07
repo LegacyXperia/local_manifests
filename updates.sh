@@ -45,11 +45,3 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan ref
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/12/52712/1 && git cherry-pick FETCH_HEAD
 # ti-wpan-fm-products.mk: Adding the product packages required for FM
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/13/52713/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/hardware/qcom/gps
-# libloc_api: Reduce debug level
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_gps refs/changes/93/51893/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/hardware/msm7k
-# librpc: Reduce debug messages
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_msm7k refs/changes/95/51895/1 && git cherry-pick FETCH_HEAD
