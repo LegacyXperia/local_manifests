@@ -49,7 +49,3 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan ref
 cd ${android}/hardware/qcom/gps
 # libloc_api: Reduce debug level
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_gps refs/changes/93/51893/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/hardware/msm7k
-# librpc: Reduce debug messages
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_msm7k refs/changes/95/51895/1 && git cherry-pick FETCH_HEAD
