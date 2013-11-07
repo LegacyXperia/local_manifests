@@ -22,7 +22,7 @@ cd ${android}/hardware/ti/wlan
 # compat-wireless: turn on TESTMODE and MAC DEBUGFS, turn off BT
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/30/51130/1 && git cherry-pick FETCH_HEAD
 # wl12xx: Import firmware & ini files from ol_R5.SP5.01
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/24/51224/6 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/24/51224/7 && git cherry-pick FETCH_HEAD
 # wpa_supplicant_lib: add check for TI specific wpa_supplicant
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/07/52707/1 && git cherry-pick FETCH_HEAD
 # ti/wlan: Remove obsolete files
