@@ -21,8 +21,6 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs
 cd ${android}/hardware/ti/wlan
 # compat-wireless: turn on TESTMODE and MAC DEBUGFS, turn off BT
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/99/51099/1 && git cherry-pick FETCH_HEAD
-# wl12xx: Import firmware & ini files from ol_R5.SP5.01
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/18/51218/2 && git cherry-pick FETCH_HEAD
 
 cd ${android}/external/wpa_supplicant_8_ti
 # Squashed update to ol_R5.SP5.01
