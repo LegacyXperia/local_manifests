@@ -16,6 +16,22 @@ cd ${android}/frameworks/av
 # camera: Fix preview on SEMC msm7x30 devices
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/73/48673/2 && git cherry-pick FETCH_HEAD
 
+cd ${android}/frameworks/native
+# Don't use fence sync for qcom legacy
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/94/52994/1 && git cherry-pick FETCH_HEAD
+# DisplayDevice: Backwards compatibility with old EGL
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/61/53161/1 && git cherry-pick FETCH_HEAD
+# libgui: Bring back support for mHeap-based screenshots
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/62/53162/1 && git cherry-pick FETCH_HEAD
+# hax: Split the exynos4/tegra legacy code paths
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/63/53163/1 && git cherry-pick FETCH_HEAD
+# surfaceflinger: enable EGL_NEEDS_FNW for qcom legacy
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/64/53164/1 && git cherry-pick FETCH_HEAD
+
+cd ${android}/hardware/qcom/audio-caf
+# audio/msm7x30: Sync audio_policy with ALSA
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/97/52997/1 && git cherry-pick FETCH_HEAD
+
 cd ${android}/hardware/ti/wlan
 # compat-wireless: turn on TESTMODE and MAC DEBUGFS, turn off BT
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/30/51130/1 && git cherry-pick FETCH_HEAD
