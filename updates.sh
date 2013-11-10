@@ -49,4 +49,4 @@ cherries+=(52713)
 # libloc_api: Reduce debug level
 cherries+=(51893)
 
-./build/tools/repopick.py -b ${cherries[@]}
+${android}/build/tools/repopick.py -b ${cherries[@]}
