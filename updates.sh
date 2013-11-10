@@ -37,4 +37,4 @@ cherries+=(52712)
 # ti-wpan-fm-products.mk: Adding the product packages required for FM
 cherries+=(52713)
 
-./build/tools/repopick.py -b ${cherries[@]}
+${android}/build/tools/repopick.py -b ${cherries[@]}
