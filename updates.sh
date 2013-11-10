@@ -8,40 +8,33 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-cd ${android}/frameworks/base
 # Add support for Xperia Play touchpads
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/10/49310/1 && git cherry-pick FETCH_HEAD
+cherries+=(49310)
 # Lower the RAM requirement for hardware acceleration
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/88/51488/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/frameworks/av
+cherries+=(51488)
 # camera: Fix preview on SEMC msm7x30 devices
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/changes/73/48673/2 && git cherry-pick FETCH_HEAD
-
-cd ${android}/hardware/ti/wlan
+cherries+=(48673)
 # compat-wireless: turn on TESTMODE and MAC DEBUGFS, turn off BT
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/30/51130/1 && git cherry-pick FETCH_HEAD
+cherries+=(51130)
 # wl12xx: Import firmware & ini files from ol_R5.SP5.01
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/24/51224/7 && git cherry-pick FETCH_HEAD
+cherries+=(51224)
 # wpa_supplicant_lib: add check for TI specific wpa_supplicant
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/07/52707/1 && git cherry-pick FETCH_HEAD
+cherries+=(52707)
 # ti/wlan: Remove obsolete files
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/88/52888/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/hardware/libhardware_legacy
+cherries+=(52888)
 # wifi: remove p2p interface on supplicant stop
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_libhardware_legacy refs/changes/30/52530/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/hardware/ti/wpan
+cherries+=(52530)
 # Clean up makefiles
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/08/52708/1 && git cherry-pick FETCH_HEAD
+cherries+=(52708)
 # wpan: fix build issues
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/09/52709/1 && git cherry-pick FETCH_HEAD
+cherries+=(52709)
 # ti-wpan-nfc-products.mk: Adding the product packages required for NFC
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/10/52710/1 && git cherry-pick FETCH_HEAD
+cherries+=(52710)
 # Squashed update of kfmapp from d-jb-mr1-release
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/11/52711/1 && git cherry-pick FETCH_HEAD
+cherries+=(52711)
 # Squashed update of FM app from d-jb-mr1-release
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/12/52712/1 && git cherry-pick FETCH_HEAD
+cherries+=(52712)
 # ti-wpan-fm-products.mk: Adding the product packages required for FM
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wpan refs/changes/13/52713/1 && git cherry-pick FETCH_HEAD
+cherries+=(52713)
+
+./build/tools/repopick.py -b ${cherries[@]}
