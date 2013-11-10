@@ -8,28 +8,19 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-cd ${android}/bootable/recovery
 # "not enough rainbows, 1 star uninstall"
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_bootable_recovery refs/changes/77/36777/3 && git cherry-pick FETCH_HEAD
-
-cd ${android}/frameworks/base
+cherries+=(36777)
 # Add support for Xperia Play touchpads
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/03/45903/4 && git cherry-pick FETCH_HEAD
+cherries+=(45903)
 # Lower the RAM requirement for hardware acceleration
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/88/51488/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/hardware/ti/wlan
+cherries+=(51488)
 # compat-wireless: turn on TESTMODE and MAC DEBUGFS, turn off BT
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_ti_wlan refs/changes/99/51099/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/external/wpa_supplicant_8_ti
+cherries+=(51099)
 # Squashed update to ol_R5.SP5.01
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_external_wpa_supplicant_8_ti refs/changes/23/51223/2 && git cherry-pick FETCH_HEAD
-
-cd ${android}/hardware/qcom/gps
+cherries+=(51223)
 # libloc_api: Reduce debug level
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_gps refs/changes/94/51894/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}/hardware/msm7k
+cherries+=(51894)
 # librpc: Reduce debug messages
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_msm7k refs/changes/96/51896/1 && git cherry-pick FETCH_HEAD
+cherries+=(51896)
+
+./build/tools/repopick.py -b ${cherries[@]}
