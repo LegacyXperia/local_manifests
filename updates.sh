@@ -23,4 +23,4 @@ cherries+=(51894)
 # librpc: Reduce debug messages
 cherries+=(51896)
 
-./build/tools/repopick.py -b ${cherries[@]}
+${android}/build/tools/repopick.py -b ${cherries[@]}
