@@ -22,8 +22,6 @@ cherries+=(53162)
 cherries+=(53163)
 # surfaceflinger: enable EGL_NEEDS_FNW for qcom legacy
 cherries+=(53164)
-# audio/msm7x30: Sync audio_policy with ALSA
-cherries+=(52997)
 # compat-wireless: turn on TESTMODE and MAC DEBUGFS, turn off BT
 cherries+=(51130)
 # wl12xx: Import firmware & ini files from ol_R5.SP5.01
@@ -46,7 +44,11 @@ cherries+=(52711)
 cherries+=(52712)
 # ti-wpan-fm-products.mk: Adding the product packages required for FM
 cherries+=(52713)
+# audio/msm7x30: Sync audio_policy with ALSA
+cherries+=(52997)
+# msm7x30: Add SEMC devices
+cherries+=(53435)
 # libloc_api: Reduce debug level
-cherries+=(51893)
+cherries+=(53495)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
