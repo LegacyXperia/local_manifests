@@ -36,5 +36,7 @@ cherries+=(52711)
 cherries+=(52712)
 # ti-wpan-fm-products.mk: Adding the product packages required for FM
 cherries+=(52713)
+# msm7x30: Add SEMC devices
+cherries+=(53435)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
