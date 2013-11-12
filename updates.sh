@@ -16,8 +16,6 @@ cherries+=(51488)
 cherries+=(48673)
 # wpa_supplicant_lib: add check for TI specific wpa_supplicant
 cherries+=(52707)
-# ti/wlan: Remove obsolete files
-cherries+=(52888)
 # wifi: remove p2p interface on supplicant stop
 cherries+=(52530)
 # Clean up makefiles
