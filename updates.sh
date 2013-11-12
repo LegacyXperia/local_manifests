@@ -14,10 +14,6 @@ cherries+=(36777)
 cherries+=(45903)
 # Lower the RAM requirement for hardware acceleration
 cherries+=(51488)
-# compat-wireless: turn on TESTMODE and MAC DEBUGFS, turn off BT
-cherries+=(51099)
-# Squashed update to ol_R5.SP5.01
-cherries+=(51223)
 # libloc_api: Reduce debug level
 cherries+=(51894)
 # librpc: Reduce debug messages
