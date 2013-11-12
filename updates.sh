@@ -14,10 +14,6 @@ cherries+=(49310)
 cherries+=(51488)
 # camera: Fix preview on SEMC msm7x30 devices
 cherries+=(48673)
-# compat-wireless: turn on TESTMODE and MAC DEBUGFS, turn off BT
-cherries+=(51130)
-# wl12xx: Import firmware & ini files from ol_R5.SP5.01
-cherries+=(51224)
 # wpa_supplicant_lib: add check for TI specific wpa_supplicant
 cherries+=(52707)
 # ti/wlan: Remove obsolete files
