@@ -24,9 +24,6 @@
 
   <project name="LegacyXperia/proprietary_vendor_semc" path="vendor/semc" />
 
-  <project name="arco/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" />
-  <project name="arco/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" />
-
   <remove-project name="CyanogenMod/android_hardware_ti_wpan" />
   <project name="LegacyXperia/android_hardware_ti_wpan" path="hardware/ti/wpan" />
 </manifest>
