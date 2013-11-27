@@ -20,4 +20,7 @@ cherries+=(53699)
 # msm7x30: Add support for camcorder mic
 cherries+=(53435)
 
+# Revert "Add Andy's ear wiggle to recovery"
+cherries+=(54693)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
