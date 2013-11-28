@@ -26,4 +26,9 @@ cherries+=(54610)
 # MediaProvider: read fat volume id from prop
 cherries+=(54609)
 
+# Externalize symbol picker options to resources
+cherries+=(54748)
+# Prevent Sym key from showing the IME picker
+cherries+=(54749)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
