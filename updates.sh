@@ -10,14 +10,10 @@ fi
 # camera: Fix preview on SEMC msm7x30 devices
 cherries+=(48673)
 
-# Clean up makefiles
-cherries+=(52708)
-# wpan: fix build issues
-cherries+=(52709)
-# wpan: Enable flag check for FM app
-cherries+=(53699)
-
 # msm7x30: Add support for camcorder mic
 cherries+=(53435)
+
+# mdpi: Override only the required dimensions
+cherries+=(54753)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
