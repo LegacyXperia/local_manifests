@@ -13,7 +13,4 @@ cherries+=(48673)
 # msm7x30: Add support for camcorder mic
 cherries+=(53435)
 
-# mdpi: Override only the required dimensions
-cherries+=(54753)
-
 ${android}/build/tools/repopick.py -b ${cherries[@]}
