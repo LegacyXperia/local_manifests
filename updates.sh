@@ -39,4 +39,7 @@ cherries+=(55385)
 # Gallery : Filter picasa specific options
 cherries+=(55471)
 
+# Parse UUID string with Long.parseLong
+cherries+=(55512)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
