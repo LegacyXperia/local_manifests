@@ -21,22 +21,22 @@ cherries+=(53162)
 # Use AOSP version of wpa_supplicant_lib
 cherries+=(54289)
 
-# Prevent Sym key from showing the IME picker
-cherries+=(54749)
+# Add option for switching between UMS and MTP/PTP mode. (2/2)
+cherries+=(54903)
 
-# MediaProvider: fetch volume ID from MountService
-cherries+=(55099)
-# vold: add command allow volume id to be queried
-cherries+=(55100)
-# MountService: add API to fetch Volume ID through vold
-cherries+=(55102)
+# Settings: Add missing up navigation in menus
+cherries+=(54957)
 
-# keyguard: fix layout for hdpi & mdpi devices
-cherries+=(54758)
-# SystemUI: Fix battery indicator alignment
-cherries+=(54761)
+# settings: bring back volume key cursor control
+cherries+=(54894)
 
 # Phone: implement noise suppression for phone calls (2/2)
 cherries+=(55075)
+
+# Fix a bootloop problem when /data/system/usagestats/usage-history.xml is empty.
+cherries+=(55385)
+
+# Gallery : Filter picasa specific options
+cherries+=(55471)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
