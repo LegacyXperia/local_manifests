@@ -42,4 +42,9 @@ cherries+=(55471)
 # Parse UUID string with Long.parseLong
 cherries+=(55512)
 
+# CidKat: CyanogenMod version preference
+cherries+=(55037)
+# CidKat: Changes to toggle between CM and KitKat
+cherries+=(55041)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
