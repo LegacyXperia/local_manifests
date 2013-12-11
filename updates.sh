@@ -27,9 +27,6 @@ cherries+=(54903)
 # Settings: Add missing up navigation in menus
 cherries+=(54957)
 
-# settings: bring back volume key cursor control
-cherries+=(54894)
-
 # Phone: implement noise suppression for phone calls (2/2)
 cherries+=(55075)
 
