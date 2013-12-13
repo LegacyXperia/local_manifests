@@ -13,11 +13,6 @@
   <project name="LegacyXperia/android_device_semc_smultron" path="device/semc/smultron" />
   <project name="LegacyXperia/android_device_semc_urushi" path="device/semc/urushi" />
 
-  <project name="LegacyXperia/android_device_semc_zeus-common" path="device/semc/zeus-common" />
-  <project name="LegacyXperia/android_device_semc_phoenix" path="device/semc/phoenix" />
-  <project name="LegacyXperia/android_device_semc_zeus" path="device/semc/zeus" />
-  <project name="LegacyXperia/android_device_semc_zeusc" path="device/semc/zeusc" />
-
   <project name="LegacyXperia/msm7x30-3.4.x-nAa" path="kernel/semc/msm7x30" />
 
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
