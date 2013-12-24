@@ -38,9 +38,6 @@ cherries+=(55211)
 # Adds ability to answer call with hardware HOME button
 cherries+=(56094)
 
-# [WIP] Forward port sound settings (1/2)
-cherries+=(56095)
-
 # Navbar: Fix MDPI & HDPI landscape layout
 cherries+=(56098)
 
@@ -55,5 +52,8 @@ cherries+=(56062)
 
 # SoftapControllerTI: update parameters for setSoftap
 cherries+=(55805)
+
+# [WIP] Forward port sound settings (1/2)
+cherries+=(56095)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
