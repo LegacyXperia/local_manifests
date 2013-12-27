@@ -18,6 +18,9 @@ cd ${android}
 # camera: Fix preview on SEMC msm7x30 devices
 cherries+=(54582)
 
+# libstagefright: support for disabling buffer metadata
+cherries+=(56361)
+
 # gui: Allow devices to disable fence sync
 cherries+=(52994)
 # DisplayDevice: Backwards compatibility with old EGL
