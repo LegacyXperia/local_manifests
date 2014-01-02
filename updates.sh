@@ -26,6 +26,8 @@ cherries+=(54257)
 
 # audio-caf: resurrect msm7x30 audio
 cherries+=(56472)
+# libstagefright: Add msm7x30 to the legacy alsa audio check
+cherries+=(56502)
 
 # CM PlatLogo: CyanogenMod version preference
 cherries+=(55037)
