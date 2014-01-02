@@ -24,6 +24,9 @@ cherries+=(52994)
 # DisplayDevice: Backwards compatibility with old EGL
 cherries+=(54257)
 
+# audio-caf: resurrect msm7x30 audio
+cherries+=(56472)
+
 # CM PlatLogo: CyanogenMod version preference
 cherries+=(55037)
 # Settings: Add CM PlatLogo & CMCaseView
@@ -45,5 +48,10 @@ cherries+=(55805)
 
 # Forward port sound settings
 cherries+=(56095)
+
+# LockScreen: allow long-press actions from hardware keys (1/2)
+cherries+=(56346)
+# LockScreen: allow long-press actions from hardware keys (2/2)
+cherries+=(56357)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
