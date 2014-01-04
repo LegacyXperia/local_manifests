@@ -11,6 +11,9 @@ fi
 # camera: Fix preview on SEMC msm7x30 devices
 cherries+=(48673)
 
+# msm7x30: Add support for SEMC camcorder mic
+cherries+=(54435)
+
 # libstagefright: extend support for disabling buffer metadata
 cherries+=(56416)
 
