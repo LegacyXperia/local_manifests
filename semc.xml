@@ -25,8 +25,8 @@
   <project name="LegacyXperia/proprietary_vendor_semc" path="vendor/semc" remote="lx" />
 
   <project name="LegacyXperia/android_hardware_qcom_audio-legacy" path="hardware/qcom/audio-legacy" remote="lx" />
-  <project name="arco/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-10.2_old" />
-  <project name="arco/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-10.2_old" />
+  <project name="LegacyXperia/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" remote="lx" revision="cm-10.2_old" />
+  <project name="LegacyXperia/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" remote="lx" revision="cm-10.2_old" />
 
   <!-- CyanogenMod projects -->
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
