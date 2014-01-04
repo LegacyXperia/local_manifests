@@ -42,9 +42,9 @@ cherries+=(56346)
 # LockScreen: allow long-press actions from hardware keys (2/2)
 cherries+=(56357)
 
-# [WIP] Camera button support (1/2)
+# Camera button support (1/2)
 cherries+=(56342)
-# [WIP] Camera button support (2/2)
+# Camera button support (2/2)
 cherries+=(56345)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
