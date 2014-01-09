@@ -8,11 +8,6 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-cd ${android}/build
-# RepoPick: Actually skip merged commit instead of exiting
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_build refs/changes/15/56215/1 && git cherry-pick FETCH_HEAD
-
-cd ${android}
 # camera: Fix preview on SEMC msm7x30 devices
 cherries+=(54582)
 
@@ -25,11 +20,6 @@ cherries+=(54257)
 cherries+=(55037)
 # Settings: Add CM PlatLogo & CMCaseView
 cherries+=(55041)
-
-# Forward port Status Bar interface (1/2)
-cherries+=(55209)
-# Forward port Status Bar settings (2/2)
-cherries+=(55211)
 
 # Adds ability to answer call with hardware HOME button
 cherries+=(56094)
