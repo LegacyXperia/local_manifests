@@ -18,3 +18,11 @@ cherries+=(54435)
 cherries+=(56416)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
+
+# Example of cherry-pick from LX gerrit:
+# You need to uncomment the lx_cherries & repopick lines
+
+# Performance profiles: default to 'classic' values
+#lx_cherries+=(16)
+
+#${android}/local_manifests/repopick.py -s auto ${lx_cherries[@]}
