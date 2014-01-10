@@ -27,6 +27,13 @@ cherries+=(56094)
 # SoftapControllerTI: update parameters for setSoftap
 cherries+=(55805)
 
+# Keep InCallUI in memory (1/3)
+cherries+=(57224)
+# Keep InCallUI in memory (2/3)
+cherries+=(57225)
+# Keep InCallUI in memory (3/3)
+cherries+=(57226)
+
 # LockScreen: allow long-press actions from hardware keys (1/2)
 cherries+=(56346)
 # LockScreen: allow long-press actions from hardware keys (2/2)
@@ -36,6 +43,11 @@ cherries+=(56357)
 cherries+=(56342)
 # Camera button support (2/2)
 cherries+=(56345)
+
+# Allow changing screenoff animation (1/2)
+cherries+=(54900)
+# Allow changing screenoff animation (2/2)
+cherries+=(54901)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
 
