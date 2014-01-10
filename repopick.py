@@ -180,7 +180,8 @@ while(True):
     project_name_to_path[ppaths[1]] = ppaths[0]
 
 # Iterate through the requested change numbers
-for change in args.change_number:
+for argument in args.change_number:
+    gerrit, change = argument.split('_', 1)
     if not args.quiet:
         print('Applying change number %s ...' % change)
 
@@ -189,7 +190,10 @@ for change in args.change_number:
     # gerrit returns two lines, a magic string and then valid JSON:
     #   )]}'
     #   [ ... valid JSON ... ]
-    url = 'http://legacyxperia.us.to:8080/changes/?q=%s&o=CURRENT_REVISION&o=CURRENT_COMMIT&pp=0' % change
+    if 'CM' in gerrit:
+        url = 'http://review.cyanogenmod.org/changes/?q=%s&o=CURRENT_REVISION&o=CURRENT_COMMIT&pp=0' % change
+    elif 'LX' in gerit:
+        url = 'http://legacyxperia.us.to:8080/changes/?q=%s&o=CURRENT_REVISION&o=CURRENT_COMMIT&pp=0' % change
     if args.verbose:
         print('Fetching from: %s\n' % url)
     f = urllib.request.urlopen(url)
@@ -258,6 +262,7 @@ for change in args.change_number:
     # Print out some useful info
     if not args.quiet:
         print('--> Subject:       "%s"' % subject)
+        print('--> Gerrit:        %s' % gerrit)
         print('--> Project path:  %s' % project_path)
         print('--> Change number: %d (Patch Set %d)' % (change_number, patch_number))
         print('--> Author:        %s <%s> %s' % (author_name, author_email, author_date))
@@ -268,6 +273,7 @@ for change in args.change_number:
       print('Fetching the change from Gerrit')
     cmd = 'cd %s && git fetch %s %s' % (project_path, fetch_url, fetch_ref)
     execute_cmd(cmd)
+
     # Perform the cherry-pick
     cmd = 'cd %s && git cherry-pick FETCH_HEAD' % (project_path)
     execute_cmd(cmd)

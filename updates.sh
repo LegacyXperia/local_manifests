@@ -8,61 +8,55 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-# Cherry-picks from CM gerrit:
-
 # camera: Fix preview on SEMC msm7x30 devices
-cherries+=(54582)
+cherries+=(CM_54582)
 
 # gui: Allow devices to disable fence sync
-cherries+=(52994)
+cherries+=(CM_52994)
 # DisplayDevice: Backwards compatibility with old EGL
-cherries+=(54257)
+cherries+=(CM_54257)
 
 # Allow using Classic WebView
-cherries+=(56054)
+cherries+=(CM_56054)
 # Revert "Remove the classic WebView from the build."
-cherries+=(56055)
+cherries+=(CM_56055)
 
 # CM PlatLogo: CyanogenMod version preference
-cherries+=(55037)
+cherries+=(CM_55037)
 # Settings: Add CM PlatLogo & CMCaseView
-cherries+=(55041)
+cherries+=(CM_55041)
 
 # Keyguard: Fix PIN layout on sw320dp-mdpi devices
-cherries+=(57557)
+cherries+=(CM_57557)
 
 # Grant dev tools system permission to trigger media-scan service
-cherries+=(57514)
+cherries+=(CM_57514)
 
 # Performance: Allow enabling KSM by default
-cherries+=(57256)
+cherries+=(CM_57256)
 
 # add option to force high-end graphics on low memory devices
-cherries+=(57471)
+cherries+=(CM_57471)
 # allow forcing HighEndGfx mode
-cherries+=(57303)
+cherries+=(CM_57303)
 
 # don't disable lockscreen widgets on low memory devices (1/2)
-cherries+=(57573)
+cherries+=(CM_57573)
 # don't disable lockscreen widgets on low memory devices (2/2)
-cherries+=(57572)
+cherries+=(CM_57572)
 
 # Exclude extra LatinIME dictionaries in "mini" builds
-cherries+=(57612)
+cherries+=(CM_57612)
 # LatinIME: Allow importing external dictionaries
-cherries+=(57616)
+cherries+=(CM_57616)
 
 # cm: Add Trebuchet back to the build
-cherries+=(55718)
-
-${android}/build/tools/repopick.py -b ${cherries[@]}
-
-# Cherry-picks from LX gerrit:
+cherries+=(CM_55718)
 
 # msm7x30: Enable KSM by default
-lx_cherries+=(27)
+cherries+=(LX_27)
 
 # Revert "Don't set low RAM for now"
-lx_cherries+=(82)
+cherries+=(LX_82)
 
-${android}/local_manifests/repopick.py -s auto ${lx_cherries[@]}
+${android}/local_manifests/repopick.py -b ${cherries[@]}
