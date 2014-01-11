@@ -12,10 +12,22 @@ fi
 cherries+=(48673)
 
 # msm7x30: Add support for SEMC camcorder mic
-cherries+=(54435)
+cherries+=(53435)
 
 # libstagefright: extend support for disabling buffer metadata
 cherries+=(56416)
+
+# init.local.rc: Tweak KSM values
+cherries+=(57320)
+
+# recovery: Fix the configuration of default_backup_format
+cherries+=(57178)
+
+# recovery: Add support for performance control
+cherries+=(56720)
+
+# Settings: fix led pulsespeedoff disable behaviour
+cherries+=(56866)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
 
