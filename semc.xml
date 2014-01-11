@@ -27,6 +27,8 @@
   <project name="LegacyXperia/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" remote="lx" revision="cm-11.0_old" />
   <project name="LegacyXperia/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" remote="lx" revision="cm-11.0_old" />
 
+  <project name="LegacyXperia/android_external_webkit" path="external/webkit" />
+
   <!-- CyanogenMod projects -->
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
   <project name="mikeNG/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" />
