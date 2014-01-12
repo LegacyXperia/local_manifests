@@ -14,9 +14,6 @@ cherries+=(48673)
 # msm7x30: Add support for SEMC camcorder mic
 cherries+=(53435)
 
-# libstagefright: extend support for disabling buffer metadata
-cherries+=(56416)
-
 # init.local.rc: Tweak KSM values
 cherries+=(57320)
 
