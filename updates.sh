@@ -16,11 +16,6 @@ cherries+=(52994)
 # DisplayDevice: Backwards compatibility with old EGL
 cherries+=(54257)
 
-# Allow using Classic WebView
-cherries+=(56054)
-# Revert "Remove the classic WebView from the build."
-cherries+=(56055)
-
 # CM PlatLogo: CyanogenMod version preference
 cherries+=(55037)
 # Settings: Add CM PlatLogo & CMCaseView
