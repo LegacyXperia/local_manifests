@@ -62,6 +62,9 @@ cherries+=(57603)
 # Implement corrected sysinit (init.d) system (2/2)
 cherries+=(57604)
 
+# cm: Add Trebuchet back to the build
+cherries+=(55718)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
 
 # Cherry-picks from LX gerrit:
