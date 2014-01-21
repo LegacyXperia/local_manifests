@@ -8,6 +8,8 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
+# Cherry-picks from CM gerrit:
+
 # camera: Fix preview on SEMC msm7x30 devices
 cherries+=(54582)
 
@@ -31,22 +33,43 @@ cherries+=(54900)
 # Allow changing screenoff animation (2/2)
 cherries+=(54901)
 
-# Keep InCallUI in memory (1/3)
-cherries+=(57224)
-# Keep InCallUI in memory (2/3)
-cherries+=(57225)
-# Keep InCallUI in memory (3/3)
-cherries+=(57226)
-
 # Keyguard: Fix PIN layout on sw320dp-mdpi devices
 cherries+=(57557)
 
+# Grant dev tools system permission to trigger media-scan service
+cherries+=(57514)
+
+# Performance: Allow enabling KSM by default
+cherries+=(57256)
+
+# add option to force high-end graphics on low memory devices
+cherries+=(57471)
+# allow forcing HighEndGfx mode
+cherries+=(57303)
+
+# don't disable lockscreen widgets on low memory devices (1/2)
+cherries+=(57573)
+# don't disable lockscreen widgets on low memory devices (2/2)
+cherries+=(57572)
+
+# Exclude extra LatinIME dictionaries in "mini" builds
+cherries+=(57612)
+# LatinIME: Allow importing external dictionaries
+cherries+=(57616)
+
+# Implement corrected sysinit (init.d) system (1/2)
+cherries+=(57603)
+# Implement corrected sysinit (init.d) system (2/2)
+cherries+=(57604)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
 
-# Example of cherry-pick from LX gerrit:
-# You need to uncomment the lx_cherries & repopick lines
+# Cherry-picks from LX gerrit:
 
-# Performance profiles: default to 'classic' values
-#lx_cherries+=(16)
+# msm7x30: Enable KSM by default
+lx_cherries+=(27)
 
-#${android}/local_manifests/repopick.py -s auto ${lx_cherries[@]}
+# Revert "Don't set low RAM for now"
+lx_cherries+=(82)
+
+${android}/local_manifests/repopick.py -s auto ${lx_cherries[@]}
