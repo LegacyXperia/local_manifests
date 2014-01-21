@@ -8,23 +8,14 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-# camera: Fix preview on SEMC msm7x30 devices
-cherries+=(48673)
-
-# msm7x30: Add support for SEMC camcorder mic
-cherries+=(53435)
-
 # init.local.rc: Tweak KSM values
 cherries+=(57320)
-
-# recovery: Fix the configuration of default_backup_format
-cherries+=(57178)
 
 # recovery: Add support for performance control
 cherries+=(56720)
 
-# Settings: fix led pulsespeedoff disable behaviour
-cherries+=(56866)
+# Keyguard: Fix PIN layout on sw320dp-mdpi devices
+cherries+=(57558)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
 
