@@ -27,6 +27,13 @@
   <project name="LegacyXperia/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" remote="lx" revision="cm-10.2_old" />
   <project name="LegacyXperia/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" remote="lx" revision="cm-10.2_old" />
 
+  <!-- CyanogenMod projects with additional LX changes -->
+  <remove-project name="CyanogenMod/android_frameworks_av" />
+  <project name="LegacyXperia/android_frameworks_av" path="frameworks/av" />
+
+  <remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
+  <project name="LegacyXperia/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" />
+
   <!-- CyanogenMod projects -->
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
 </manifest>
