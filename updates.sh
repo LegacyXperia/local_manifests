@@ -28,11 +28,6 @@ cherries+=(55037)
 # Settings: Add CM PlatLogo & CMCaseView
 cherries+=(55041)
 
-# Allow changing screenoff animation (1/2)
-cherries+=(54900)
-# Allow changing screenoff animation (2/2)
-cherries+=(54901)
-
 # Keyguard: Fix PIN layout on sw320dp-mdpi devices
 cherries+=(57557)
 
@@ -56,11 +51,6 @@ cherries+=(57572)
 cherries+=(57612)
 # LatinIME: Allow importing external dictionaries
 cherries+=(57616)
-
-# Implement corrected sysinit (init.d) system (1/2)
-cherries+=(57603)
-# Implement corrected sysinit (init.d) system (2/2)
-cherries+=(57604)
 
 # cm: Add Trebuchet back to the build
 cherries+=(55718)
