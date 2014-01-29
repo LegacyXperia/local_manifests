@@ -11,12 +11,12 @@ fi
 # CM PlatLogo: CyanogenMod version preference
 cherries+=(CM_55037)
 # Settings: Add CM PlatLogo & CMCaseView
-cherries+=(CM_55041)
+cherries+=(CMF_55041)
 
 # add option to force high-end graphics on low memory devices
 cherries+=(CM_57471)
 # allow forcing HighEndGfx mode
-cherries+=(CM_57303)
+cherries+=(CMF_57303)
 
 # cm: Add Trebuchet back to the build
 cherries+=(CM_55718)

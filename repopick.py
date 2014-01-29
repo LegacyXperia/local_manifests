@@ -192,7 +192,7 @@ for argument in args.change_number:
     #   [ ... valid JSON ... ]
     if 'CM' in gerrit:
         url = 'http://review.cyanogenmod.org/changes/?q=%s&o=CURRENT_REVISION&o=CURRENT_COMMIT&pp=0' % change
-    elif 'LX' in gerit:
+    elif 'LX' in gerrit:
         url = 'http://legacyxperia.us.to:8080/changes/?q=%s&o=CURRENT_REVISION&o=CURRENT_COMMIT&pp=0' % change
     if args.verbose:
         print('Fetching from: %s\n' % url)
@@ -220,7 +220,7 @@ for argument in args.change_number:
 
     # Extract information from the JSON response
     date_fluff       = '.000000000'
-    project_name     = data['project']
+    project_name_1   = data['project']
     change_number    = data['_number']
     status           = data['status']
     current_revision = data['revisions'][data['current_revision']]
@@ -234,6 +234,12 @@ for argument in args.change_number:
     committer_email  = current_revision['commit']['committer']['email']
     committer_date   = current_revision['commit']['committer']['date'].replace(date_fluff, '')
     subject          = current_revision['commit']['subject']
+
+    # Convert project name for forked repositories
+    if 'CMF' in gerrit:
+        project_name=project_name_1.replace('CyanogenMod', 'LegacyXperia')
+    else:
+        project_name=project_name_1
 
     # Check if commit has already been merged and exit if it has, unless -f is specified
     if status == "MERGED":
@@ -262,7 +268,7 @@ for argument in args.change_number:
     # Print out some useful info
     if not args.quiet:
         print('--> Subject:       "%s"' % subject)
-        print('--> Gerrit:        %s' % gerrit)
+        print('--> Project name:  %s' % project_name)
         print('--> Project path:  %s' % project_path)
         print('--> Change number: %d (Patch Set %d)' % (change_number, patch_number))
         print('--> Author:        %s <%s> %s' % (author_name, author_email, author_date))
