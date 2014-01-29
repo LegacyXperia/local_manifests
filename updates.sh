@@ -8,14 +8,8 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-# init.local.rc: Tweak KSM values
-cherries+=(57320)
-
-# recovery: Add support for performance control
-cherries+=(56720)
-
-# Keyguard: Fix PIN layout on sw320dp-mdpi devices
-cherries+=(57558)
+# Add missing 'power button as shutter' initialization
+cherries+=(56986)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
 
