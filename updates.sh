@@ -19,4 +19,4 @@ ${android}/build/tools/repopick.py -b ${cherries[@]}
 # Performance profiles: default to 'classic' values
 #lx_cherries+=(16)
 
-#${android}/local_manifests/repopick.py -s auto ${lx_cherries[@]}
+#${android}/vendor/extra/repopick.py -s auto ${lx_cherries[@]}
