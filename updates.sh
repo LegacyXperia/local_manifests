@@ -24,4 +24,4 @@ cherries+=(CM_55718)
 # Revert "Don't set low RAM for now"
 cherries+=(LX_82)
 
-${android}/local_manifests/repopick.py -b ${cherries[@]}
+${android}/vendor/extra/repopick.py -b ${cherries[@]}
