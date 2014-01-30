@@ -2,5 +2,5 @@
 <manifest>
   <!-- LegacyXperia extras -->
   <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
-  <project name="LegacyXperia/android_packages_apps_LegacyXperiaCenter" path="packages/apps/LegacyXperiaCenter" />
+  <project name="LegacyXperia/android_packages_apps_LegacyXperiaCenter" path="packages/apps/LegacyXperiaCenter" revision="master" />
 </manifest>
