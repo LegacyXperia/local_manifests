@@ -11,11 +11,6 @@ fi
 # build: use the system's ccache by default
 cherries+=(CM_58332)
 
-# CM PlatLogo: CyanogenMod version preference
-cherries+=(CM_55037)
-# Settings: Add CM PlatLogo & CMCaseView
-cherries+=(CMF_55041)
-
 # add option to force high-end graphics on low memory devices
 cherries+=(CM_57471)
 # allow forcing HighEndGfx mode
@@ -33,5 +28,19 @@ cherries+=(CM_57946)
 cherries+=(CM_57947)
 # Camera: Handle keys only while in app
 cherries+=(CM_58444)
+# Camera2: tweak volume key zoom and cleanup
+cherries+=(CM_58809)
+
+# Replace removed NARROW_COLUMNS layout mode with TEXT_AUTOSIZING
+cherries+=(CM_58709)
+
+# Settings: don't hide Home category if user has only 1 launcher
+cherries+=(CM_58846)
+
+# Settings LightSettingsDialog: update led on text change
+cherries+=(CM_58813)
+
+# Revert "Linkify email addresses only."
+cherries+=(CM_58461)
 
 ${android}/vendor/extra/repopick.py -b ${cherries[@]}
