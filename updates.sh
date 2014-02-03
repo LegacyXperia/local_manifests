@@ -8,6 +8,9 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
+# build: use the system's ccache by default
+cherries+=(CM_58332)
+
 # CM PlatLogo: CyanogenMod version preference
 cherries+=(CM_55037)
 # Settings: Add CM PlatLogo & CMCaseView
@@ -18,10 +21,17 @@ cherries+=(CM_57471)
 # allow forcing HighEndGfx mode
 cherries+=(CMF_57303)
 
-# cm: Add Trebuchet back to the build
-cherries+=(CM_55718)
+# Dialer: Add Greek T9 support
+cherries+=(CM_58545)
 
-# Revert "Don't set low RAM for now"
-cherries+=(LX_82)
+# WLAN - wl12xx: Update to R5.SP7.01 from R5.SP5.01 package
+cherries+=(CM_58549)
+
+# Camera: Powerkey shutter (2/2)
+cherries+=(CM_57946)
+# Camera: Cleanup hardware key handling
+cherries+=(CM_57947)
+# Camera: Handle keys only while in app
+cherries+=(CM_58444)
 
 ${android}/vendor/extra/repopick.py -b ${cherries[@]}
