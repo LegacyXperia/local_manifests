@@ -34,10 +34,12 @@
   <remove-project name="CyanogenMod/android_frameworks_base" />
   <remove-project name="CyanogenMod/android_frameworks_native" />
   <remove-project name="CyanogenMod/android_frameworks_webview" />
+  <remove-project name="CyanogenMod/android_packages_apps_Browser" />
   <project name="LegacyXperia/android_frameworks_av" path="frameworks/av" />
   <project name="LegacyXperia/android_frameworks_base" path="frameworks/base" />
   <project name="LegacyXperia/android_frameworks_native" path="frameworks/native" />
   <project name="LegacyXperia/android_frameworks_webview" path="frameworks/webview" />
+  <project name="LegacyXperia/android_packages_apps_Browser" path="packages/apps/Browser" />
 
   <!-- CyanogenMod projects -->
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
