@@ -8,4 +8,7 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-#${android}/vendor/extra/repopick.py -b ${cherries[@]}
+# Allow using Classic WebView
+cherries+=(CM_56054)
+
+${android}/vendor/extra/repopick.py -b ${cherries[@]}
