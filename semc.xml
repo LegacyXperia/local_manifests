@@ -28,7 +28,7 @@
   <project name="LegacyXperia/android_bootable_recovery" path="bootable/recovery" />
 
   <remove-project name="CyanogenMod/android_frameworks_av" />
-  <project name="LegacyXperia/android_frameworks_base" path="frameworks/av" />
+  <project name="LegacyXperia/android_frameworks_av" path="frameworks/av" />
 
   <remove-project name="CyanogenMod/android_frameworks_base" />
   <project name="LegacyXperia/android_frameworks_base" path="frameworks/base" />
