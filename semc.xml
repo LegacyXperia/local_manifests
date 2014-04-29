@@ -1,45 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="LegacyXperia/local_manifests" path="vendor/extra" />
+  <project name="LegacyXperia/local_manifests" path="vendor/extra" remote="github" revision="android-4.4" />
 
   <!-- LegacyXperia projects -->
-  <project name="LegacyXperia/android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" />
+  <project name="LegacyXperia/android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" remote="github" revision="android-4.4" />
 
-  <project name="LegacyXperia/android_device_semc_mogami-common" path="device/semc/mogami-common" />
-  <project name="LegacyXperia/android_device_semc_anzu" path="device/semc/anzu" />
-  <project name="LegacyXperia/android_device_semc_coconut" path="device/semc/coconut" />
-  <project name="LegacyXperia/android_device_semc_haida" path="device/semc/haida" />
-  <project name="LegacyXperia/android_device_semc_hallon" path="device/semc/hallon" />
-  <project name="LegacyXperia/android_device_semc_iyokan" path="device/semc/iyokan" />
-  <project name="LegacyXperia/android_device_semc_mango" path="device/semc/mango" />
-  <project name="LegacyXperia/android_device_semc_satsuma" path="device/semc/satsuma" />
-  <project name="LegacyXperia/android_device_semc_smultron" path="device/semc/smultron" />
-  <project name="LegacyXperia/android_device_semc_urushi" path="device/semc/urushi" />
+  <project name="LegacyXperia/android_device_semc_mogami-common" path="device/semc/mogami-common" remote="github" revision="android-4.4" />
+  <project name="LegacyXperia/android_device_semc_anzu" path="device/semc/anzu" remote="github" revision="android-4.4" />
+  <project name="LegacyXperia/android_device_semc_coconut" path="device/semc/coconut" remote="github" revision="android-4.4" />
+  <project name="LegacyXperia/android_device_semc_haida" path="device/semc/haida" remote="github" revision="android-4.4" />
+  <project name="LegacyXperia/android_device_semc_hallon" path="device/semc/hallon" remote="github" revision="android-4.4" />
+  <project name="LegacyXperia/android_device_semc_iyokan" path="device/semc/iyokan" remote="github" revision="android-4.4" />
+  <project name="LegacyXperia/android_device_semc_mango" path="device/semc/mango" remote="github" revision="android-4.4" />
+  <project name="LegacyXperia/android_device_semc_satsuma" path="device/semc/satsuma" remote="github" revision="android-4.4" />
+  <project name="LegacyXperia/android_device_semc_smultron" path="device/semc/smultron" remote="github" revision="android-4.4" />
+  <project name="LegacyXperia/android_device_semc_urushi" path="device/semc/urushi" remote="github" revision="android-4.4" />
 
-  <project name="LegacyXperia/android_device_semc_zeus-common" path="device/semc/zeus-common" />
-  <project name="LegacyXperia/android_device_semc_zeus" path="device/semc/zeus" />
+  <project name="LegacyXperia/android_kernel_semc_msm7x30" path="kernel/semc/msm7x30" remote="github" revision="cm-11.0" />
 
-  <project name="LegacyXperia/android_kernel_semc_msm7x30" path="kernel/semc/msm7x30" />
+  <project name="LegacyXperia/proprietary_vendor_semc" path="vendor/semc" remote="github" revision="android-4.4" />
 
-  <project name="LegacyXperia/proprietary_vendor_semc" path="vendor/semc" />
+  <!-- OmniROM projects with additional changes -->
+  <remove-project name="android_hardware_qcom_audio-caf" />
+  <remove-project name="android_hardware_qcom_display-caf" />
+  <remove-project name="android_hardware_qcom_media-caf" />
+  <project name="LegacyXperia/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" remote="github" revision="qcom-4.4_2.7" />
+  <project name="LegacyXperia/android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" remote="github" revision="qcom-4.4_2.7" />
+  <project name="LegacyXperia/android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" remote="github" revision="qcom-4.4_2.7" />
 
-  <!-- CyanogenMod projects with additional changes -->
-  <remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
-  <remove-project name="CyanogenMod/android_hardware_qcom_display-caf" />
-  <remove-project name="CyanogenMod/android_hardware_qcom_media-caf" />
-  <project name="LegacyXperia/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" />
-  <project name="LegacyXperia/android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" />
-  <project name="LegacyXperia/android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" />
-
-  <remove-project name="CyanogenMod/android_hardware_ti_wpan" />
-  <project name="LegacyXperia/android_hardware_ti_wpan" path="hardware/ti/wpan" />
-
-  <remove-project name="CyanogenMod/android_frameworks_av" />
-  <project name="LegacyXperia/android_frameworks_av" path="frameworks/av" />
-
-  <remove-project name="CyanogenMod/android_frameworks_native" />
-  <project name="LegacyXperia/android_frameworks_native" path="frameworks/native" />
+  <!-- OmniROM projects -->
+  <project name="android_hardware_sony_DASH" path="hardware/sony/DASH" remote="omnirom" revision="android-4.4" />
 
   <!-- CyanogenMod projects -->
-  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
+  <project name="CyanogenMod/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="github" revision="cm-11.0" />
+
+  <remove-project name="platform/hardware/ti/wlan" />
+  <remove-project name="platform/hardware/ti/wpan" />
+  <project name="CyanogenMod/android_hardware_ti_wlan" path="hardware/ti/wlan" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_hardware_ti_wpan" path="hardware/ti/wpan" remote="github" revision="cm-11.0" />
 </manifest>
