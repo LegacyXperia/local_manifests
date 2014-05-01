@@ -28,6 +28,15 @@
   <project name="LegacyXperia/android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" remote="github" revision="qcom-4.4_2.7" />
   <project name="LegacyXperia/android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" remote="github" revision="qcom-4.4_2.7" />
 
+  <remove-project name="android_external_wpa_supplicant_8" />
+  <project name="LegacyXperia/android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="github" revision="android-4.4" />
+
+  <remove-project name="android_hardware_libhardware_legacy" />
+  <project name="LegacyXperia/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="github" revision="android-4.4" />
+
+  <remove-project name="platform/system/netd" />
+  <project name="LegacyXperia/android_system_netd" path="system/netd" remote="github" revision="android-4.4" />
+
   <!-- OmniROM projects -->
   <project name="android_hardware_sony_DASH" path="hardware/sony/DASH" remote="omnirom" revision="android-4.4" />
 
