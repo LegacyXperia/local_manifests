@@ -31,8 +31,14 @@
   <remove-project name="android_external_wpa_supplicant_8" />
   <project name="LegacyXperia/android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="github" revision="android-4.4" />
 
+  <remove-project name="android_frameworks_opt_telephony" />
+  <project name="LegacyXperia/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" revision="android-4.4" />
+
   <remove-project name="android_hardware_libhardware_legacy" />
   <project name="LegacyXperia/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="github" revision="android-4.4" />
+
+  <remove-project name="android_system_core" />
+  <project name="LegacyXperia/android_system_core" path="system/core" remote="github" revision="android-4.4" />
 
   <remove-project name="platform/system/netd" />
   <project name="LegacyXperia/android_system_netd" path="system/netd" remote="github" revision="android-4.4" />
