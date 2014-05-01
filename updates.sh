@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ -f ~/bin/paths-11.0.sh ]; then
-	source ~/bin/paths-11.0.sh
+if [ -f ~/bin/paths-omni-4.4.sh ]; then
+	source ~/bin/paths-omni-4.4.sh
 fi
 
 if [ "${android}" = "" ]; then
