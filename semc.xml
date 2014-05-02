@@ -16,7 +16,7 @@
   <project name="LegacyXperia/android_device_semc_smultron" path="device/semc/smultron" remote="github" revision="android-4.4" />
   <project name="LegacyXperia/android_device_semc_urushi" path="device/semc/urushi" remote="github" revision="android-4.4" />
 
-  <project name="LegacyXperia/android_kernel_semc_msm7x30" path="kernel/semc/msm7x30" remote="github" revision="cm-11.0" />
+  <project name="LegacyXperia/android_kernel_semc_msm7x30" path="kernel/semc/msm7x30" remote="github" revision="android-4.4" />
 
   <project name="LegacyXperia/proprietary_vendor_semc" path="vendor/semc" remote="github" revision="android-4.4" />
 
