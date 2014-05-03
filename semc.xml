@@ -28,6 +28,9 @@
   <project name="LegacyXperia/android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" remote="github" revision="qcom-4.4_2.7" />
   <project name="android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" remote="omnirom" revision="qcom-4.4_2.7" />
 
+  <remove-project name="android_frameworks_av" />
+  <project name="LegacyXperia/android_frameworks_av" path="frameworks/av" remote="github" revision="android-4.4" />
+
   <remove-project name="platform/system/netd" />
   <project name="LegacyXperia/android_system_netd" path="system/netd" remote="github" revision="android-4.4" />
 
