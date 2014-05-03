@@ -24,7 +24,7 @@
   <remove-project name="android_hardware_qcom_audio-caf" />
   <remove-project name="android_hardware_qcom_display-caf" />
   <remove-project name="android_hardware_qcom_media-caf" />
-  <project name="LegacyXperia/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" remote="github" revision="qcom-4.4_2.7" />
+  <project name="android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" remote="omnirom" revision="qcom-4.4_2.7" />
   <project name="LegacyXperia/android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" remote="github" revision="qcom-4.4_2.7" />
   <project name="android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" remote="omnirom" revision="qcom-4.4_2.7" />
 
