@@ -14,9 +14,6 @@ cherries+=(63036)
 # Revert "wpa_supplicant_8 - Hostapd: Android related changes for sockets"
 cherries+=(63203)
 
-# telephony: set additional audio parameters for incall audio (2/2)
-cherries+=(63399)
-
 # bluedroid: increase uhid report buffer size for wiimote
 cherries+=(63389)
 
