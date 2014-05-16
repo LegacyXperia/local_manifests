@@ -35,10 +35,4 @@ cherries+=(63413)
 # Add support for Xperia Play touchpads
 cherries+=(63422)
 
-# Test for systemui lockup and excessive memory usage
-cherries+=(63806)
-
-# Revert "New Theme Engine [3/6]"
-cherries+=(62903)
-
 ${android}/build/tools/repopick.py -b ${cherries[@]}
