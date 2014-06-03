@@ -26,7 +26,4 @@ cherries+=(64436)
 # Add UUID (re-)scan support for vold-mounted volume (2/2)
 cherries+=(64437)
 
-# cm: Enable KSM deferred timer for kernels supporting it
-cherries+=(64707)
-
 ${android}/build/tools/repopick.py -b ${cherries[@]}
