@@ -14,12 +14,12 @@ cherries+=(63203)
 # Add support for Xperia Play touchpads
 cherries+=(63422)
 
-# Add UUID (re-)scan support for vold-mounted volume (1/2)
-cherries+=(64436)
-# Add UUID (re-)scan support for vold-mounted volume (2/2)
-cherries+=(64437)
+# vold: Send UUID with list response
+cherries+=(66055)
+# MountService: Handle UUID in list response
+cherries+=(66057)
 
-# Build FFMPEG plugin for all targets
-cherries+=(65575)
+# Apply IO scheduler settings to all storage devices
+cherries+=(65599)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
