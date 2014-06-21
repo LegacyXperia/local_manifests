@@ -8,15 +8,6 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-# build: Add QCOM target-specific config
-cherries+=(7706)
-
-# Squashed QCOM DirectTrack commits
-cherries+=(7460)
-
-# libhardware: Modify ifdefs for legacy DirectTrack
-cherries+=(7652)
-
 # libstagefright: Allow using camera recording buffer as input for encoder
 cherries+=(8069)
 
