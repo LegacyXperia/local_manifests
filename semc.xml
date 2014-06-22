@@ -26,16 +26,15 @@
   <project name="android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" remote="omnirom" revision="qcom-4.4_2.7" />
   <project name="android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" remote="omnirom" revision="qcom-4.4_2.7" />
 
-  <remove-project name="platform/system/netd" />
-  <project name="LegacyXperia/android_system_netd" path="system/netd" remote="github" revision="android-4.4" />
-
   <!-- OmniROM projects -->
   <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="omnirom" revision="android-4.4" />
   <project name="android_hardware_sony_DASH" path="hardware/sony/DASH" remote="omnirom" revision="android-4.4" />
 
-  <!-- CyanogenMod projects -->
+  <remove-project name="platform/system/netd" />
+  <project name="android_system_netd" path="system/netd" remote="omnirom" revision="android-4.4" />
+
   <remove-project name="platform/hardware/ti/wlan" />
   <remove-project name="platform/hardware/ti/wpan" />
-  <project name="CyanogenMod/android_hardware_ti_wlan" path="hardware/ti/wlan" remote="github" revision="cm-11.0" />
-  <project name="LegacyXperia/android_hardware_ti_wpan" path="hardware/ti/wpan" remote="github" revision="android-4.4" />
+  <project name="android_hardware_ti_wlan" path="hardware/ti/wlan" remote="omnirom" revision="android-4.4" />
+  <project name="android_hardware_ti_wpan" path="hardware/ti/wpan" remote="omnirom" revision="android-4.4" />
 </manifest>

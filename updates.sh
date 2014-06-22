@@ -8,14 +8,14 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
+# set cortex-a8 optimization for scorpion
+cherries+=(7956)
+
 # libstagefright: Allow using camera recording buffer as input for encoder
 cherries+=(8069)
 
 # libstagefright: Fix video encoder input buffer
 cherries+=(8070)
-
-# Revert "Revert "mm-video: venc: Correct a typo in variable name""
-cherries+=(4343)
 
 # Externalize symbol picker options to resources
 cherries+=(7354)
