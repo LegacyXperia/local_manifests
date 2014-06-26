@@ -29,12 +29,4 @@
   <!-- OmniROM projects -->
   <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="omnirom" revision="android-4.4" />
   <project name="android_hardware_sony_DASH" path="hardware/sony/DASH" remote="omnirom" revision="android-4.4" />
-
-  <remove-project name="platform/system/netd" />
-  <project name="android_system_netd" path="system/netd" remote="omnirom" revision="android-4.4" />
-
-  <remove-project name="platform/hardware/ti/wlan" />
-  <remove-project name="platform/hardware/ti/wpan" />
-  <project name="android_hardware_ti_wlan" path="hardware/ti/wlan" remote="omnirom" revision="android-4.4" />
-  <project name="android_hardware_ti_wpan" path="hardware/ti/wpan" remote="omnirom" revision="android-4.4" />
 </manifest>
