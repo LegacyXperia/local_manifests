@@ -14,11 +14,6 @@ cherries+=(63203)
 # Add support for Xperia Play touchpads
 cherries+=(63422)
 
-# vold: Send UUID with list response
-cherries+=(66055)
-# MountService: Handle UUID in list response
-cherries+=(66057)
-
 # Apply IO scheduler settings to all storage devices
 cherries+=(65599)
 
