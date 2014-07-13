@@ -8,12 +8,6 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-# libstagefright: Allow using camera recording buffer as input for encoder
-cherries+=(8069)
-
-# libstagefright: Fix video encoder input buffer
-cherries+=(8070)
-
 # Externalize symbol picker options to resources
 cherries+=(7354)
 
