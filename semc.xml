@@ -25,11 +25,9 @@
   <project name="LegacyXperia/proprietary_vendor_semc" path="vendor/semc" />
 
   <!-- CyanogenMod projects with additional changes -->
-  <remove-project name="CyanogenMod/android_frameworks_av" />
   <remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
   <remove-project name="CyanogenMod/android_hardware_qcom_display-caf" />
   <remove-project name="CyanogenMod/android_hardware_qcom_media-caf" />
-  <project name="LegacyXperia/android_frameworks_av" path="frameworks/av" />
   <project name="LegacyXperia/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" />
   <project name="LegacyXperia/android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" />
   <project name="LegacyXperia/android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" />

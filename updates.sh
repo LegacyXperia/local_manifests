@@ -17,4 +17,10 @@ cherries+=(63422)
 # Apply IO scheduler settings to all storage devices
 cherries+=(65599)
 
+# libstagefright: Allow using camera recording buffer as input for encoder
+cherries+=(66213)
+
+# libstagefright: Fix video encoder input buffer
+cherries+=(66214)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
