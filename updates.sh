@@ -11,6 +11,18 @@ fi
 # Revert "wpa_supplicant_8 - Hostapd: Android related changes for sockets"
 cherries+=(63203)
 
+# Squashed revert of SoftapControllerTI changes
+cherries+=(69352)
+
+# netd: Don't reload fw if a single fw is supported
+cherries+=(69353)
+
+# wifi: remove local nl80211 header
+cherries+=(69354)
+
+# New call-in/-back functions for Controller to do vendor-specific shutdown
+cherries+=(69355)
+
 # Add support for Xperia Play touchpads
 cherries+=(63422)
 
