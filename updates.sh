@@ -8,7 +8,21 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-# Externalize symbol picker options to resources
-cherries+=(7354)
+# Squashed revert of SoftapControllerTI changes
+cherries+=(8901)
+
+# netd: Don't reload fw if a single fw is supported
+cherries+=(8902)
+
+# wifi: remove local nl80211 header
+cherries+=(8904)
+
+# New call-in/-back functions for Controller to do vendor-specific shutdown
+cherries+=(8910)
+
+
+
+
+
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
