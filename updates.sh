@@ -29,4 +29,10 @@ cherries+=(8978)
 # media-caf: Squashed merge of qcom-4.4_2.7 branch
 cherries+=(8977)
 
+# rootdir: Update cpufreq permissions when governor changes
+cherries+=(8534)
+
+# Camera: Add red-eye flash mode support
+cherries+=(8527)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
