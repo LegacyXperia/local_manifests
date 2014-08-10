@@ -23,6 +23,9 @@ cherries+=(8910)
 # ti: Add interface_mtu request
 cherries+=(8998)
 
+# Android: Android.mk: Define ANDROID_P2P
+cherries+=(9062)
+
 # display-caf: Squashed merge of qcom-4.4_2.7 branch updates
 cherries+=(8978)
 
