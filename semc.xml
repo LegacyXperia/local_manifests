@@ -20,12 +20,6 @@
 
   <project name="DonkeyCoyote/proprietary_vendor_semc" path="vendor/semc" remote="github" revision="android-4.4" />
 
-  <!-- OmniROM projects with additional changes -->
-  <remove-project name="android_hardware_qcom_display-caf" />
-  <remove-project name="android_hardware_qcom_media-caf" />
-  <project name="android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" remote="omnirom" revision="qcom-4.4_2.7" />
-  <project name="android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" remote="omnirom" revision="qcom-4.4_2.7" />
-
   <!-- OmniROM projects -->
   <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="omnirom" revision="android-4.4" />
   <project name="android_hardware_sony_DASH" path="hardware/sony/DASH" remote="omnirom" revision="android-4.4" />

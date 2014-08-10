@@ -23,4 +23,10 @@ cherries+=(8910)
 # ti: Add interface_mtu request
 cherries+=(8998)
 
+# display-caf: Squashed merge of qcom-4.4_2.7 branch updates
+cherries+=(8978)
+
+# media-caf: Squashed merge of qcom-4.4_2.7 branch
+cherries+=(8977)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
