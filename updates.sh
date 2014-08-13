@@ -23,6 +23,9 @@ cherries+=(69354)
 # New call-in/-back functions for Controller to do vendor-specific shutdown
 cherries+=(69355)
 
+# ti: Add interface_mtu request
+cherries+=(69839)
+
 # Add support for Xperia Play touchpads
 cherries+=(63422)
 
@@ -34,5 +37,11 @@ cherries+=(66213)
 
 # libstagefright: Fix video encoder input buffer
 cherries+=(66214)
+
+# Fix AppInfo drop target getting cut off when search bar is off.
+cherries+=(70192)
+
+# Fix spacing issues on devices with/without nav-bar in overview settings panel
+cherries+=(70318)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
