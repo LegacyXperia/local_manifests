@@ -26,11 +26,7 @@
 
   <!-- CyanogenMod projects with additional changes -->
   <remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
-  <remove-project name="CyanogenMod/android_hardware_qcom_display-caf" />
-  <remove-project name="CyanogenMod/android_hardware_qcom_media-caf" />
   <project name="LegacyXperia/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" />
-  <project name="LegacyXperia/android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" />
-  <project name="LegacyXperia/android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" />
 
   <!-- CyanogenMod projects -->
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
