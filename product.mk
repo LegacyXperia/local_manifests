@@ -12,7 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
+ifeq ($(TARGET_UNOFFICIAL_BUILD_ID),LegacyXperia)
+    PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 
-PRODUCT_PACKAGES += \
-    LegacyXperiaCenter
+    PRODUCT_PACKAGES += \
+        LegacyXperiaCenter
+endif
