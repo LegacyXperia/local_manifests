@@ -38,10 +38,4 @@ cherries+=(66213)
 # libstagefright: Fix video encoder input buffer
 cherries+=(66214)
 
-# Fix AppInfo drop target getting cut off when search bar is off.
-cherries+=(70192)
-
-# Fix spacing issues on devices with/without nav-bar in overview settings panel
-cherries+=(70318)
-
 ${android}/build/tools/repopick.py -b ${cherries[@]}
