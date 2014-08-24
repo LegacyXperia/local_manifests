@@ -26,4 +26,7 @@ cherries+=(66214)
 # Destroy client handles after they're closed
 cherries+=(71199)
 
+# mm-core: Enable HW mp3 decoder for msm7x30
+cherries+=(70946)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
