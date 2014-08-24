@@ -23,4 +23,7 @@ cherries+=(66213)
 # libstagefright: Fix video encoder input buffer
 cherries+=(66214)
 
+# Destroy client handles after they're closed
+cherries+=(71199)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
