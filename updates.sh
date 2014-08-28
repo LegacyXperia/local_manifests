@@ -29,4 +29,7 @@ cherries+=(9062)
 # Android: driver_nl80211: implement NoA/p2p_ps/set_wps_ie stubs
 cherries+=(9309)
 
+# mm-core: Enable HW mp3 decoder for msm7x30
+cherries+=(9310)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
