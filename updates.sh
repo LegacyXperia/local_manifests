@@ -24,18 +24,6 @@ cherries+=(8910)
 cherries+=(8998)
 
 # Android: Android.mk: Define ANDROID_P2P
-cherries+=(9062)
-
-# display-caf: Squashed merge of qcom-4.4_2.7 branch updates
-cherries+=(8978)
-
-# media-caf: Squashed merge of qcom-4.4_2.7 branch
-cherries+=(8977)
-
-# rootdir: Update cpufreq permissions when governor changes
-cherries+=(8534)
-
-# Camera: Add red-eye flash mode support
-cherries+=(8527)
+#cherries+=(9062)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
