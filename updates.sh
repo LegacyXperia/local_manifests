@@ -24,6 +24,9 @@ cherries+=(8910)
 cherries+=(8998)
 
 # Android: Android.mk: Define ANDROID_P2P
-#cherries+=(9062)
+cherries+=(9062)
+
+# Android: driver_nl80211: implement NoA/p2p_ps/set_wps_ie stubs
+cherries+=(9309)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
