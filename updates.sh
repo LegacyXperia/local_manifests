@@ -17,9 +17,6 @@ cherries+=(8902)
 # wifi: remove local nl80211 header
 cherries+=(8904)
 
-# New call-in/-back functions for Controller to do vendor-specific shutdown
-cherries+=(8910)
-
 # ti: Add interface_mtu request
 cherries+=(8998)
 
