@@ -11,6 +11,12 @@ fi
 # ti: Add interface_mtu request
 cherries+=(69839)
 
+# Android: Android.mk: Define ANDROID_P2P
+cherries+=(70290)
+
+# Android: driver_nl80211: implement NoA/p2p_ps/set_wps_ie stubs
+cherries+=(71193)
+
 # Add support for Xperia Play touchpads
 cherries+=(63422)
 
@@ -28,5 +34,38 @@ cherries+=(71199)
 
 # mm-core: Enable HW mp3 decoder for msm7x30
 cherries+=(70946)
+
+# Camera2: Prevent propogating CancelAutoFocus during Video Recording
+cherries+=(71477)
+
+# Camera: Move out TimeLapse option from global list
+cherries+=(72046)
+
+# camera2: Kate Upton mode
+cherries+=(72185)
+
+# Add Screen Off option for buttons double-tap/long press (1 of 2)
+cherries+=(69163)
+
+# Add Screen Off option for buttons double-tap/long press (2 of 2)
+cherries+=(69164)
+
+# Bluetooth : Handling case: close comes before rxthread
+cherries+=(70334)
+
+# a2dp: disable music autoplay on connect based on settings
+cherries+=(71674)
+
+# Show devices connected to the WiFi hotspot(1/2)
+cherries+=(66257)
+
+# Show devices connected to the WiFi hotspot(2/2)
+cherries+=(67004)
+
+# Properly apply edit dialog brightness value.
+cherries+=(72204)
+
+# Clean up quick settings tile code.
+cherries+=(72141)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
