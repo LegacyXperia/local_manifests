@@ -29,7 +29,7 @@ cherries+=(9309)
 # Destroy client handles after they're closed
 cherries+=(9314)
 
-# Don't force GPU composite for older devices
-cherries+=(9308)
+# wl12xx: Ported SEMC changes
+cherries+=(9097)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
