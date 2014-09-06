@@ -62,10 +62,4 @@ cherries+=(66257)
 # Show devices connected to the WiFi hotspot(2/2)
 cherries+=(67004)
 
-# Properly apply edit dialog brightness value.
-cherries+=(72204)
-
-# Clean up quick settings tile code.
-cherries+=(72141)
-
 ${android}/build/tools/repopick.py -b ${cherries[@]}
