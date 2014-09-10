@@ -8,18 +8,6 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-# ti: Add interface_mtu request
-cherries+=(69839)
-
-# Android: Android.mk: Define ANDROID_P2P
-cherries+=(70290)
-
-# Android: driver_nl80211: implement NoA/p2p_ps/set_wps_ie stubs
-cherries+=(71193)
-
-# Add support for Xperia Play touchpads
-cherries+=(63422)
-
 # Apply IO scheduler settings to all storage devices
 cherries+=(65599)
 
