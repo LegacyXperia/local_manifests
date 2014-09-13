@@ -23,6 +23,9 @@ cherries+=(71199)
 # mm-core: Enable HW mp3 decoder for msm7x30
 cherries+=(70946)
 
+# libbt-vendor: Cleanup handling of all commands
+cherries+=(73157)
+
 # sensors: as3676: Allow disabling hardware ALS switch
 cherries+=(72595)
 
