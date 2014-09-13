@@ -26,12 +26,6 @@ cherries+=(70946)
 # sensors: as3676: Allow disabling hardware ALS switch
 cherries+=(72595)
 
-# Camera2: Prevent propogating CancelAutoFocus during Video Recording
-cherries+=(71477)
-
-# Camera: Move out TimeLapse option from global list
-cherries+=(72046)
-
 # camera2: Kate Upton mode
 cherries+=(72185)
 
