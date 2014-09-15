@@ -23,6 +23,9 @@ cherries+=(71199)
 # mm-core: Enable HW mp3 decoder for msm7x30
 cherries+=(70946)
 
+# ti: Add interface_mtu request
+cherries+=(69839)
+
 # libbt-vendor: Cleanup handling of all commands
 cherries+=(73157)
 
