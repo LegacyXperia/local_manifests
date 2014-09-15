@@ -32,7 +32,7 @@ cherries+=(73157)
 # sensors: as3676: Allow disabling hardware ALS switch
 cherries+=(72595)
 
-# camera2: Kate Upton mode
+# Camera2: Headset button shutter
 cherries+=(72185)
 
 # Add Screen Off option for buttons double-tap/long press (1 of 2)
