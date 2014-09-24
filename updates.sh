@@ -35,22 +35,10 @@ cherries+=(72595)
 # Camera2: Headset button shutter
 cherries+=(72185)
 
-# Add Screen Off option for buttons double-tap/long press (1 of 2)
-cherries+=(69163)
-
-# Add Screen Off option for buttons double-tap/long press (2 of 2)
-cherries+=(69164)
-
 # Bluetooth : Handling case: close comes before rxthread
 cherries+=(70334)
 
 # a2dp: disable music autoplay on connect based on settings
 cherries+=(71674)
-
-# Show devices connected to the WiFi hotspot(1/2)
-cherries+=(66257)
-
-# Show devices connected to the WiFi hotspot(2/2)
-cherries+=(67004)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
