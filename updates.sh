@@ -32,9 +32,6 @@ cherries+=(73157)
 # sensors: as3676: Allow disabling hardware ALS switch
 cherries+=(72595)
 
-# Camera2: Headset button shutter
-cherries+=(72185)
-
 # Bluetooth : Handling case: close comes before rxthread
 cherries+=(70334)
 
