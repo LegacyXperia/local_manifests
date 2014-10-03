@@ -38,4 +38,7 @@ cherries+=(70334)
 # a2dp: disable music autoplay on connect based on settings
 cherries+=(71674)
 
+# settings: allow scroll in LED settings's color dialog
+cherries+=(74453)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
