@@ -24,10 +24,6 @@
 
   <project name="LegacyXperia/proprietary_vendor_semc" path="vendor/semc" />
 
-  <!-- CyanogenMod projects with additional changes -->
-  <remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
-  <project name="LegacyXperia/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" />
-
   <!-- CyanogenMod projects -->
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
 </manifest>
