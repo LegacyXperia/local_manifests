@@ -41,4 +41,19 @@ cherries+=(71674)
 # settings: allow scroll in LED settings's color dialog
 cherries+=(74453)
 
+# linearlayout: fix measurement of childrens when parent and childrens have exactly the same pixels
+cherries+=(74436)
+
+# systemui: tweak expanded_status_bar_header layout
+cherries+=(74382)
+
+# Dialer: Match dialer preference style across activities
+cherries+=(74396)
+
+# Revert "SystemUI: Fix missing top task in recent panel."
+cherries+=(74399)
+
+# Revert "Settings: refactor Profiles to be more user friendly"
+cherries+=(74594)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
