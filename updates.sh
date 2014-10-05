@@ -56,4 +56,7 @@ cherries+=(74399)
 # Revert "Settings: refactor Profiles to be more user friendly"
 cherries+=(74594)
 
+# SoundRecorder: Bring out of gingerbread days
+cherries+=(74326)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
