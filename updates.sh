@@ -47,12 +47,6 @@ cherries+=(74436)
 # systemui: tweak expanded_status_bar_header layout
 cherries+=(74382)
 
-# Dialer: Match dialer preference style across activities
-cherries+=(74396)
-
-# Revert "SystemUI: Fix missing top task in recent panel."
-cherries+=(74399)
-
 # Revert "Settings: refactor Profiles to be more user friendly"
 cherries+=(74594)
 
