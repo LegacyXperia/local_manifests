@@ -26,6 +26,12 @@ cherries+=(70946)
 # ti: Add interface_mtu request
 cherries+=(69839)
 
+# wl12xx: Stop messing with modprobe
+cherries+=(74933)
+
+# wl12xx: Don't build wl1251 if the kernel doesn't require it
+cherries+=(74934)
+
 # libbt-vendor: Cleanup handling of all commands
 cherries+=(73157)
 
@@ -38,22 +44,13 @@ cherries+=(70334)
 # a2dp: disable music autoplay on connect based on settings
 cherries+=(71674)
 
-# settings: allow scroll in LED settings's color dialog
-cherries+=(74453)
-
 # linearlayout: fix measurement of childrens when parent and childrens have exactly the same pixels
 cherries+=(74436)
 
 # systemui: tweak expanded_status_bar_header layout
 cherries+=(74382)
 
-# Revert "Settings: refactor Profiles to be more user friendly"
-cherries+=(74594)
-
 # SoundRecorder: Bring out of gingerbread days
 cherries+=(74326)
-
-# ril: Weaken external ril symbol
-cherries+=(74850)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
