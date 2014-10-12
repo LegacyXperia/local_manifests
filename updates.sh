@@ -53,4 +53,7 @@ cherries+=(74594)
 # SoundRecorder: Bring out of gingerbread days
 cherries+=(74326)
 
+# ril: Weaken external ril symbol
+cherries+=(74850)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
