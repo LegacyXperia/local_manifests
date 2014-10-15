@@ -53,4 +53,7 @@ cherries+=(74382)
 # SoundRecorder: Bring out of gingerbread days
 cherries+=(74326)
 
+# Tethering: Fix ocassional Settings FC due to activity == NULL
+cherries+=(74856)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
