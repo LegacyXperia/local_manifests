@@ -26,12 +26,6 @@ cherries+=(70946)
 # ti: Add interface_mtu request
 cherries+=(69839)
 
-# wl12xx: Stop messing with modprobe
-cherries+=(74933)
-
-# wl12xx: Don't build wl1251 if the kernel doesn't require it
-cherries+=(74934)
-
 # libbt-vendor: Cleanup handling of all commands
 cherries+=(73157)
 
