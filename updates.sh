@@ -35,9 +35,6 @@ cherries+=(74934)
 # libbt-vendor: Cleanup handling of all commands
 cherries+=(73157)
 
-# sensors: as3676: Allow disabling hardware ALS switch
-cherries+=(72595)
-
 # Bluetooth : Handling case: close comes before rxthread
 cherries+=(70334)
 
