@@ -17,9 +17,6 @@ cherries+=(66213)
 # libstagefright: Fix video encoder input buffer
 cherries+=(66214)
 
-# Destroy client handles after they're closed
-cherries+=(71199)
-
 # ti: Add interface_mtu request
 cherries+=(69839)
 
