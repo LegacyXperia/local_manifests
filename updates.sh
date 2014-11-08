@@ -29,13 +29,7 @@ cherries+=(70334)
 # a2dp: disable music autoplay on connect based on settings
 cherries+=(71674)
 
-# linearlayout: fix measurement of childrens when parent and childrens have exactly the same pixels
-cherries+=(74436)
-
 # systemui: tweak expanded_status_bar_header layout
 cherries+=(74382)
-
-# SoundRecorder: Bring out of gingerbread days
-cherries+=(74326)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
