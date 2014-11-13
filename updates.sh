@@ -32,4 +32,7 @@ cherries+=(71674)
 # systemui: tweak expanded_status_bar_header layout
 cherries+=(74382)
 
+# Fix lockscreen selection view in landscape mode.
+cherries+=(76918)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
