@@ -8,9 +8,6 @@ if [ "${android}" = "" ]; then
 	android=~/android/system
 fi
 
-# build: recovery: Support adding device-specific items
-cherries+=(76553)
-
 # build: Handle boot images with custom makefile properly
 cherries+=(76919)
 
