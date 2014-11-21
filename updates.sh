@@ -23,4 +23,7 @@ cherries+=(78128)
 # linker: Avoid logcat spam with some blobs
 cherries+=(78605)
 
+# libc: Add Scorpion-optimized memcpy and memset
+cherries+=(77758)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
