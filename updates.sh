@@ -20,4 +20,7 @@ cherries+=(78120)
 # rild: Don't use the clientId argument with non-qcom hardware
 cherries+=(78128)
 
+# linker: Avoid logcat spam with some blobs
+cherries+=(78605)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
