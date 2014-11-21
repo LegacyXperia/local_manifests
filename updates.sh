@@ -14,4 +14,10 @@ cherries+=(76919)
 # Revert "get rid of MemoryHeapPmem"
 cherries+=(77524)
 
+# Android: driver_nl80211: implement NoA/p2p_ps/set_wps_ie stubs
+cherries+=(78120)
+
+# rild: Don't use the clientId argument with non-qcom hardware
+cherries+=(78128)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
