@@ -25,4 +25,8 @@ cherries+=(81758)
 # mtdutils: Fix mounting partitions by-name
 cherries+=(83404/1)
 
-${android}/build/tools/repopick.py -b ${cherries[@]}
+if [ -z $cherries ]; then
+    echo -e "Nothing to cherry-pick!"
+else
+    ${android}/build/tools/repopick.py -b ${cherries[@]}
+fi
