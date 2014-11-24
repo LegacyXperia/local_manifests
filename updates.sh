@@ -29,4 +29,7 @@ cherries+=(78853)
 # libc: Add Scorpion-optimized memcpy and memset
 cherries+=(77758)
 
+# Revert "Revert "Reenable support for non-PIE executables""
+cherries+=(79136)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
