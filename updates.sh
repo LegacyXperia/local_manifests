@@ -14,9 +14,6 @@ cherries+=(76919)
 # build: Add option to disable block-based ota
 cherries+=(78849)
 
-# Revert "get rid of MemoryHeapPmem"
-cherries+=(77524)
-
 # Android: driver_nl80211: implement NoA/p2p_ps/set_wps_ie stubs
 cherries+=(78120)
 
@@ -31,5 +28,8 @@ cherries+=(77758)
 
 # Revert "Revert "Reenable support for non-PIE executables""
 cherries+=(79136)
+
+# libutils: refbase: jellybean mr1 compat
+cherries2+=(79142)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
