@@ -1,24 +1,23 @@
 #!/bin/bash
 
 if [ -f ~/bin/paths-12.0.sh ]; then
-	source ~/bin/paths-12.0.sh
+    source ~/bin/paths-12.0.sh
+fi
+
+if [ ! -d ".repo" ]; then
+    echo -e "No .repo directory found.  Is this an Android build tree?"
+    exit 1
 fi
 
 if [ "${android}" = "" ]; then
-	android=~/android/system
+    android="${PWD}"
 fi
-
-# build: Handle boot images with custom makefile properly
-cherries+=(76919)
 
 # build: Add option to disable block-based ota
 cherries+=(78849)
 
 # Android: driver_nl80211: implement NoA/p2p_ps/set_wps_ie stubs
 cherries+=(78120)
-
-# rild: Don't use the clientId argument with non-qcom hardware
-cherries+=(78128)
 
 # capabilities ERANG error fix
 cherries+=(78853)
