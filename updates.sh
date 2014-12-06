@@ -19,9 +19,6 @@ cherries+=(78849)
 # recovery: Always include ext4 stuff
 cherries+=(79803)
 
-# Android: driver_nl80211: implement NoA/p2p_ps/set_wps_ie stubs
-cherries+=(78120)
-
 # capabilities ERANG error fix
 cherries+=(78853)
 
@@ -30,5 +27,8 @@ cherries+=(79136)
 
 # libutils: refbase: jellybean mr1 compat
 cherries+=(79142)
+
+# Implement UICC TLV Data decoding
+cherries+=(80227)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
