@@ -17,4 +17,10 @@ cherries+=(66214)
 # Fix lockscreen selection view in landscape mode.
 cherries+=(76918)
 
+# gralloc: Perform func to return stride and height
+cherries+=(71800)
+
+# gralloc: Fix compatibility issue
+cherries+=(80951)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
