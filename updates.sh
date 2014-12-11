@@ -28,7 +28,4 @@ cherries+=(79136)
 # libutils: refbase: jellybean mr1 compat
 cherries+=(79142)
 
-# Implement UICC TLV Data decoding
-cherries+=(80227)
-
 ${android}/build/tools/repopick.py -b ${cherries[@]}
