@@ -19,8 +19,8 @@ cherries+=(78849)
 # recovery: Always include ext4 stuff
 cherries+=(79803)
 
-# capabilities ERANG error fix
-cherries+=(78853)
+# Fix HDPI images
+cherries+=(81705)
 
 # Revert "Revert "Reenable support for non-PIE executables""
 cherries+=(79136)
