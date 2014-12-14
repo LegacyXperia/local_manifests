@@ -28,4 +28,7 @@ cherries+=(79136)
 # libutils: refbase: jellybean mr1 compat
 cherries+=(79142)
 
+# Eleven: Add more missing mdpi/hdpi/xhdpi drawables
+cherries+=(81754)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
