@@ -22,7 +22,4 @@ cherries+=(79136)
 # libutils: refbase: jellybean mr1 compat
 cherries+=(79142)
 
-# SystemUI: Update WiFi indicator drawable sizes
-cherries+=(82281)
-
 ${android}/build/tools/repopick.py -b ${cherries[@]}
