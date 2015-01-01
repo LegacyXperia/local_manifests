@@ -19,7 +19,4 @@ cherries+=(78849)
 # Revert "Revert "Reenable support for non-PIE executables""
 cherries+=(79136)
 
-# libutils: refbase: jellybean mr1 compat
-cherries+=(79142)
-
 ${android}/build/tools/repopick.py -b ${cherries[@]}
