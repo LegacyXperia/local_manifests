@@ -28,4 +28,7 @@ cherries+=(81764)
 # bcmdhd: workaround for driver compiled as a module
 cherries+=(82598)
 
+# mtdutils: Fix mounting partitions by-name
+cherries+=(83404)
+
 ${android}/build/tools/repopick.py -b ${cherries[@]}
