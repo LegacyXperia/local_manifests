@@ -29,6 +29,6 @@ cherries+=(81764)
 cherries+=(82598)
 
 # mtdutils: Fix mounting partitions by-name
-cherries+=(83404)
+cherries+=(83404/1)
 
 ${android}/build/tools/repopick.py -b ${cherries[@]}
