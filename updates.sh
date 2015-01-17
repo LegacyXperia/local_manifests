@@ -31,22 +31,4 @@ cherries+=(82598)
 # mtdutils: Fix mounting partitions by-name
 cherries+=(83404/1)
 
-# updater: support auto detecting filesystem for mounting
-cherries+=(84913)
-
-# edify: use auto for filesystem type on mounts
-cherries+=(84915)
-
-# mount: attempt to detect filesystem if failed to mount via fstab
-cherries+=(85049)
-
-# roots: attempt to autodetect filesystem type if not vold or yaffs2
-cherries+=(85314)
-
-# fs_mgr: auto-detect filesystem when performing a check
-cherries+=(85168)
-
-# build: Allow yaffs2 to coexist with ext4/f2fs
-cherries+=(85602)
-
 ${android}/build/tools/repopick.py -b ${cherries[@]}
