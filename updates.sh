@@ -23,7 +23,10 @@ cherries+=(79136)
 cherries+=(81758)
 
 # mtdutils: Fix mounting partitions by-name
-cherries+=(83404/1)
+cherries+=(83404)
+
+# lowmemorykiller: Overwrite LMK parameters for low-tier devices
+cherries+=(86327)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
