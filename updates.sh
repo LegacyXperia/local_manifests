@@ -22,11 +22,11 @@ cherries+=(79136)
 # arm: Allow disabling PIE for dynamically linked executables
 cherries+=(81758)
 
-# mtdutils: Fix mounting partitions by-name
-cherries+=(83404)
-
 # lowmemorykiller: Overwrite LMK parameters for low-tier devices
 cherries+=(86327)
+
+# android_reboot: execute recovery pre command while rw mounted
+cherries2+=(86669)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
