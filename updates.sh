@@ -26,7 +26,7 @@ cherries+=(81758)
 cherries+=(86327)
 
 # android_reboot: execute recovery pre command while rw mounted
-cherries2+=(86669)
+cherries+=(86669)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
