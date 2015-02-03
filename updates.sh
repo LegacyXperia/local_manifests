@@ -22,11 +22,11 @@ cherries+=(79136)
 # arm: Allow disabling PIE for dynamically linked executables
 cherries+=(81758)
 
-# lowmemorykiller: Overwrite LMK parameters for low-tier devices
-cherries+=(86327)
+# libstagefright: Allow using camera recording buffer as input for encoder
+cherries+=(84178)
 
-# android_reboot: execute recovery pre command while rw mounted
-cherries+=(86669)
+# libstagefright: Fix video encoder input buffer
+cherries+=(84179)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
