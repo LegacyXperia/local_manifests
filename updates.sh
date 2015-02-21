@@ -28,6 +28,15 @@ cherries+=(84178)
 # libstagefright: Fix video encoder input buffer
 cherries+=(84179)
 
+# vold: add ro.vold.umsdirtyratio property
+cherries+=(88635)
+
+# mount: respect a user-specified fstype
+cherries+=(88592)
+
+# get_devname: fix a couple warnings
+cherries+=(89206)
+
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
