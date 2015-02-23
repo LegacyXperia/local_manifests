@@ -37,6 +37,9 @@ cherries+=(88592)
 # get_devname: fix a couple warnings
 cherries+=(89206)
 
+# healthd: charger: Make battery capacity in charging animation opt-in
+cherries+=(85588)
+
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
