@@ -31,12 +31,6 @@ cherries+=(84179)
 # vold: add ro.vold.umsdirtyratio property
 cherries+=(88635)
 
-# mount: respect a user-specified fstype
-cherries+=(88592)
-
-# get_devname: fix a couple warnings
-cherries+=(89206)
-
 # healthd: charger: Make battery capacity in charging animation opt-in
 cherries+=(85588)
 
