@@ -14,28 +14,28 @@ if [ "${android}" = "" ]; then
 fi
 
 # build: Add option to disable block-based ota
-cherries+=(78849)
+cherries+=(CM_78849)
 
 # Revert "Revert "Reenable support for non-PIE executables""
-cherries+=(79136)
+cherries+=(CM_79136)
 
 # arm: Allow disabling PIE for dynamically linked executables
-cherries+=(81758)
+cherries+=(CM_81758)
 
 # libstagefright: Allow using camera recording buffer as input for encoder
-cherries+=(84178)
+cherries+=(CM_84178)
 
 # libstagefright: Fix video encoder input buffer
-cherries+=(84179)
+cherries+=(CM_84179)
 
 # vold: add ro.vold.umsdirtyratio property
-cherries+=(88635)
+cherries+=(CM_88635)
 
 # healthd: charger: Make battery capacity in charging animation opt-in
-cherries+=(85588)
+cherries+=(CM_85588)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
-    ${android}/build/tools/repopick.py -b ${cherries[@]}
+    ${android}/vendor/extra/repopick.py -b ${cherries[@]}
 fi
