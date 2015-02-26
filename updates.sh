@@ -1,16 +1,15 @@
 #!/bin/bash
 
-if [ -f ~/bin/paths-12.0.sh ]; then
-    source ~/bin/paths-12.0.sh
-fi
-
 if [ ! -d ".repo" ]; then
     echo -e "No .repo directory found.  Is this an Android build tree?"
     exit 1
 fi
 
-if [ "${android}" = "" ]; then
-    android="${PWD}"
+android="${PWD}"
+
+# Add local cherries if they exist
+if [ -f ${android}/updates-local.sh ]; then
+    source ${android}/updates-local.sh
 fi
 
 # build: Add option to disable block-based ota
