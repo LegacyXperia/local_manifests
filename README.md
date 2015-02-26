@@ -6,4 +6,4 @@ Local manifest needed to build cm-12.0 for the Sony Ericsson 2011 phone line.
 Instructions:
 -------------
 
-Copy semc.xml into .repo/local_manifests folder in your cm12.0 tree
+Check the detailed [guide on xda](http://forum.xda-developers.com/xperia-mini/general/guide-2011-how-to-build-cyanogenmod-12-0-t3041214)
