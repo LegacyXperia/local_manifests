@@ -1,17 +1,25 @@
 #!/bin/bash
 
-if [ -f ~/bin/paths-11.0.sh ]; then
-	source ~/bin/paths-11.0.sh
+if [ ! -d ".repo" ]; then
+    echo -e "No .repo directory found.  Is this an Android build tree?"
+    exit 1
 fi
 
-if [ "${android}" = "" ]; then
-	android=~/android/system
+android="${PWD}"
+
+# Add local cherries if they exist
+if [ -f ${android}/updates-local.sh ]; then
+    source ${android}/updates-local.sh
 fi
 
 # libstagefright: Allow using camera recording buffer as input for encoder
-cherries+=(66213)
+cherries+=(CM_66213)
 
 # libstagefright: Fix video encoder input buffer
-cherries+=(66214)
+cherries+=(CM_66214)
 
-${android}/build/tools/repopick.py -b ${cherries[@]}
+if [ -z $cherries ]; then
+    echo -e "Nothing to cherry-pick!"
+else
+    ${android}/vendor/extra/repopick.py -b ${cherries[@]}
+fi
