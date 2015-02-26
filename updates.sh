@@ -30,9 +30,6 @@ cherries+=(CM_84179)
 # vold: add ro.vold.umsdirtyratio property
 cherries+=(CM_88635)
 
-# healthd: charger: Make battery capacity in charging animation opt-in
-cherries+=(CM_85588)
-
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
