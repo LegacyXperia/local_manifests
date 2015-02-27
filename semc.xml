@@ -4,7 +4,7 @@
           fetch="https://github.com"
           review="msm7x30.org:8000" />
 
-  <project name="LegacyXperia/local_manifests" path="vendor/extra" />
+  <project name="LegacyXperia/local_manifests" path="vendor/extra" remote="msm7x30" />
 
   <!-- LegacyXperia projects -->
   <project name="LegacyXperia/android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" remote="msm7x30" />
