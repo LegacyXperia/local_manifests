@@ -30,6 +30,9 @@ cherries+=(CM_84179)
 # vold: add ro.vold.umsdirtyratio property
 cherries+=(CM_88635)
 
+# Revert blkid changes
+cherries+=(CM_90225)
+
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
