@@ -30,8 +30,11 @@ cherries+=(CM_84179)
 # vold: add ro.vold.umsdirtyratio property
 cherries+=(CM_88635)
 
-# Revert blkid changes
-cherries+=(CM_90225)
+# mount: address a couple crashes
+cherries+=(CM_90578)
+
+# mmc: msm_sdcc: Fix wl12xx error "watchdog interrupt received"
+cherries+=(LX_124)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
