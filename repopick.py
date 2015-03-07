@@ -439,12 +439,16 @@ for argument in args.change_number:
         print('--> Committer:     %s <%s> %s' % (committer_name, committer_email, committer_date))
 
     # Try fetching from GitHub first
+    if 'CM' in gerrit:
+        github_remote = 'github'
+    elif 'LX' in gerrit:
+        github_remote = 'msm7x30'
     if args.verbose:
        print('Trying to fetch the change from GitHub')
     if args.pull:
-      cmd = 'cd %s && git pull --no-edit github %s' % (project_path, fetch_ref)
+      cmd = 'cd %s && git pull --no-edit %s %s' % (project_path, github_remote, fetch_ref)
     else:
-      cmd = 'cd %s && git fetch github %s' % (project_path, fetch_ref)
+      cmd = 'cd %s && git fetch %s %s' % (project_path, github_remote, fetch_ref)
     execute_cmd(cmd, True)
     # Check if it worked
     FETCH_HEAD = '%s/.git/FETCH_HEAD' % project_path
