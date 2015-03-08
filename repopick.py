@@ -200,7 +200,7 @@ if args.topic:
         if 'CM' in gerrit:
             url = 'http://review.cyanogenmod.org/changes/?q=topic:%s' % tag
         elif 'LX' in gerrit:
-            url = 'http://msm7x30.org:8000/changes/?q=topic:%s' % tag
+            url = 'http://review.msm7x30.org/changes/?q=topic:%s' % tag
 
         if args.verbose:
             print('Fetching all commits from topic: %s\n' % tag)
@@ -240,7 +240,7 @@ if args.query:
         if 'CM' in gerrit:
             url = 'http://review.cyanogenmod.org/changes/?q=%s' % pquery
         elif 'LX' in gerrit:
-            url = 'http://msm7x30.org:8000/changes/?q=%s' % pquery
+            url = 'http://review.msm7x30.org/changes/?q=%s' % pquery
         if args.verbose:
             print('Fetching all commits using query: %s\n' % pquery)
         f = urllib.request.urlopen(url)
@@ -316,7 +316,7 @@ for argument in args.change_number:
     if 'CM' in gerrit:
         url = 'http://review.cyanogenmod.org/changes/?q={change}&o={query_revision}&o=CURRENT_COMMIT&pp=0'.format(change=change, query_revision=query_revision)
     elif 'LX' in gerrit:
-        url = 'http://msm7x30.org:8000/changes/?q={change}&o={query_revision}&o=CURRENT_COMMIT&pp=0'.format(change=change, query_revision=query_revision)
+        url = 'http://review.msm7x30.org/changes/?q={change}&o={query_revision}&o=CURRENT_COMMIT&pp=0'.format(change=change, query_revision=query_revision)
     if args.verbose:
         print('Fetching from: %s\n' % url)
     try:
