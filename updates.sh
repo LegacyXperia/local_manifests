@@ -21,12 +21,6 @@ cherries+=(CM_66214)
 # Keyguard: enlarge lockpattern on small screens
 cherries+=(CM_78962)
 
-# Revert "msm_sdcc: SDIO related fixes"
-cherries+=(LX_157)
-
-# mmc: msm_sdcc: Fix wl12xx error "watchdog interrupt received"
-cherries+=(LX_158)
-
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
