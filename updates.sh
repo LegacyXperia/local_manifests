@@ -33,8 +33,11 @@ cherries+=(CM_88635)
 # mount: address a couple crashes
 cherries+=(CM_90578)
 
+# Revert "msm_sdcc: SDIO related fixes"
+cherries+=(LX_157)
+
 # mmc: msm_sdcc: Fix wl12xx error "watchdog interrupt received"
-cherries+=(LX_124)
+cherries+=(LX_158)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
