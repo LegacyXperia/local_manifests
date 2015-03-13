@@ -21,6 +21,9 @@ cherries+=(CM_66214)
 # Keyguard: enlarge lockpattern on small screens
 cherries+=(CM_78962)
 
+# Revert "Android: Use extended P2P functionality (ANDROID_P2P) for all vendors"
+cherries+=(CM_91277)
+
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
