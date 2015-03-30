@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Copyright (C) 2013-14 The CyanogenMod Project
+# Copyright (C) 2013-2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,16 +30,16 @@ import argparse
 import textwrap
 
 try:
-  # For python3
-  import urllib.error
-  import urllib.request
+    # For python3
+    import urllib.error
+    import urllib.request
 except ImportError:
-  # For python2
-  import imp
-  import urllib2
-  urllib = imp.new_module('urllib')
-  urllib.error = urllib2
-  urllib.request = urllib2
+    # For python2
+    import imp
+    import urllib2
+    urllib = imp.new_module('urllib')
+    urllib.error = urllib2
+    urllib.request = urllib2
 
 # Parse the command line
 parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=textwrap.dedent('''\
@@ -121,7 +121,7 @@ def execute_cmd(cmd, can_fail=False):
         if not args.verbose:
             print('\nCommand that failed:\n%s' % cmd)
         if not can_fail:
-             sys.exit(1)
+            sys.exit(1)
 
 # Verifies whether pathA is a subdirectory (or the same) as pathB
 def is_pathA_subdir_of_pathB(pathA, pathB):
@@ -359,7 +359,7 @@ for argument in args.change_number:
                 if (int(data['revisions'][revision]['_number']) == int(patchset)) and not patchsetfound:
                     target_revision = data['revisions'][revision]
                     if args.verbose:
-                       print('Using found patch set {patchset} ...'.format(patchset=patchset))
+                        print('Using found patch set {patchset} ...'.format(patchset=patchset))
                     patchsetfound = True
                     break
             if not patchsetfound:
@@ -444,26 +444,26 @@ for argument in args.change_number:
     elif 'LX' in gerrit:
         github_remote = 'msm7x30'
     if args.verbose:
-       print('Trying to fetch the change from GitHub')
+        print('Trying to fetch the change from GitHub')
     if args.pull:
-      cmd = 'cd %s && git pull --no-edit %s %s' % (project_path, github_remote, fetch_ref)
+        cmd = 'cd %s && git pull --no-edit %s %s' % (project_path, github_remote, fetch_ref)
     else:
-      cmd = 'cd %s && git fetch %s %s' % (project_path, github_remote, fetch_ref)
+        cmd = 'cd %s && git fetch %s %s' % (project_path, github_remote, fetch_ref)
     execute_cmd(cmd, True)
     # Check if it worked
     FETCH_HEAD = '%s/.git/FETCH_HEAD' % project_path
     if os.stat(FETCH_HEAD).st_size == 0:
         # That didn't work, fetch from Gerrit instead
         if args.verbose:
-          print('Fetching from GitHub didn\'t work, trying to fetch the change from Gerrit')
+            print('Fetching from GitHub didn\'t work, trying to fetch the change from Gerrit')
         if args.pull:
-          cmd = 'cd %s && git pull --no-edit %s %s' % (project_path, fetch_url, fetch_ref)
+            cmd = 'cd %s && git pull --no-edit %s %s' % (project_path, fetch_url, fetch_ref)
         else:
-          cmd = 'cd %s && git fetch %s %s' % (project_path, fetch_url, fetch_ref)
+            cmd = 'cd %s && git fetch %s %s' % (project_path, fetch_url, fetch_ref)
         execute_cmd(cmd)
     # Perform the cherry-pick
     cmd = 'cd %s && git cherry-pick FETCH_HEAD' % (project_path)
     if not args.pull:
-      execute_cmd(cmd)
+        execute_cmd(cmd)
     if not args.quiet:
         print('')
