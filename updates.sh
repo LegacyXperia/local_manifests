@@ -16,19 +16,19 @@ fi
 cherries+=(CM_78849)
 
 # Revert "Revert "Reenable support for non-PIE executables""
-cherries+=(CM_79136)
+cherries+=(CM_92349)
 
 # arm: Allow disabling PIE for dynamically linked executables
 cherries+=(CM_81758)
 
-# libstagefright: Allow using camera recording buffer as input for encoder
-cherries+=(CM_84178)
-
-# libstagefright: Fix video encoder input buffer
-cherries+=(CM_84179)
-
 # vold: add ro.vold.umsdirtyratio property
 cherries+=(CM_88635)
+
+# audio: Make getPresentationPosition pure virtual
+cherries+=(CM_92381)
+
+# audio: Fixed Audio Source in Voice Call
+cherries+=(CM_92643)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
