@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="msm7x30"
-          revision="cm-12.1"
           fetch="https://github.com"
           review="review.msm7x30.org" />
 
@@ -37,7 +36,7 @@
   <project name="msm7x30/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x30" remote="msm7x30" revision="cm-12.1-caf-7x30" />
 
   <!-- CyanogenMod projects -->
-  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" revision="cm-12.0" />
+  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
 
   <!-- AOSP projects-->
   <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="master" />
