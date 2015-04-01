@@ -38,6 +38,9 @@
   <!-- CyanogenMod projects -->
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
 
+  <remove-project name="CyanogenMod/android_vendor_cm" />
+  <project name="mikeNG/android_vendor_cm" path="vendor/cm" />
+
   <!-- AOSP projects-->
   <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="master" />
   <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="master" />
