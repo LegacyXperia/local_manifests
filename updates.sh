@@ -48,9 +48,6 @@ cherries+=(CM_92937)
 # minui: Performance improvements
 cherries+=(CM_92938)
 
-# sr: Fix the header image
-cherries+=(CM_92939)
-
 # sr: Clean up navigation
 cherries+=(CM_92940)
 
