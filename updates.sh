@@ -51,9 +51,6 @@ cherries+=(CM_92938)
 # sr: Clean up navigation
 cherries+=(CM_92940)
 
-# mogami: Fix BT deep sleep
-cherries+=(LX_285)
-
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
