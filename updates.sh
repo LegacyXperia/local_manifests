@@ -30,9 +30,6 @@ cherries+=(CM_84179)
 # vold: add ro.vold.umsdirtyratio property
 cherries+=(CM_88635)
 
-# SurfaceFlinger: Featurize libuiblur module for OSS build
-cherries+=(CM_91461)
-
 # Fix Droid and animation color in recovery mode
 cherries+=(CM_92934)
 
@@ -50,6 +47,12 @@ cherries+=(CM_92938)
 
 # sr: Clean up navigation
 cherries+=(CM_92940)
+
+# Improve placement of progress bar.
+cherries+=(CM_94424)
+
+# sr: Fix log text color
+cherries+=(CM_94425)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
