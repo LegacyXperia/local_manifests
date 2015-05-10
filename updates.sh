@@ -18,15 +18,6 @@ cherries+=(CM_66213)
 # libstagefright: Fix video encoder input buffer
 cherries+=(CM_66214)
 
-# iyokan: Cleanup keyboard configuration
-cherries+=(LX_390)
-
-# mango: Cleanup keyboard configuration
-cherries+=(LX_392)
-
-# mogami-common: Cleanup keyboard configuration
-cherries+=(LX_393)
-
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
