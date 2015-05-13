@@ -21,6 +21,9 @@ cherries+=(CM_92943)
 # arm: Allow disabling PIE for dynamically linked executables
 cherries+=(CM_81758)
 
+# Only try to add data_extra when we want to add it
+cherries+=(CM_97855)
+
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
