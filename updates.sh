@@ -24,6 +24,9 @@ cherries+=(CM_81758)
 # Only try to add data_extra when we want to add it
 cherries+=(CM_97855)
 
+# sensors: sharp_gp2: Support the upstream gp2a kernel driver
+cherries+=(CM_101102)
+
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
