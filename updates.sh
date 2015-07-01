@@ -24,8 +24,50 @@ cherries+=(CM_81758)
 # Only try to add data_extra when we want to add it
 cherries+=(CM_97855)
 
+# policy: Show a simple dialog about optimizing apps
+cherries+=(CM_101243)
+
+# Fix mounting of ext4 formated sdcards
+cherries+=(CM_101070)
+
 # sensors: sharp_gp2: Support the upstream gp2a kernel driver
 cherries+=(CM_101102)
+
+# sensors: sharp_gp2: do not use GNU old-style field designators
+cherries+=(CM_101108)
+
+# sensors: sharp_gp2: Correct power consumption value
+cherries+=(CM_101109)
+
+# sensors: sharp_gp2: Remove delay function in dash
+cherries+=(CM_101110)
+
+# sensors: sharp_gp2: Enable wakelocks
+cherries+=(CM_101111)
+
+# sensors: sharp_gp2: Code cleanup
+cherries+=(CM_101112)
+
+# sensors: apds970x: Code cleanup
+cherries+=(CM_101113)
+
+# sensors: apds970x: Set correct vendor name
+cherries+=(CM_101114)
+
+# sensors: as3676: Replace spaces with tabs
+cherries+=(CM_101198)
+
+# sensors: as3676: Remove unused var
+cherries+=(CM_101205)
+
+# sensors: als: Align cflags with upstream
+cherries+=(CM_101200)
+
+# sensors: as3676: Correct default light range
+cherries+=(CM_101210)
+
+# msm7x30-common: Remove as3676 max range
+cherries+=(LX_611)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
