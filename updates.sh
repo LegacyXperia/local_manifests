@@ -69,6 +69,12 @@ cherries+=(CM_101210)
 # msm7x30-common: Remove as3676 max range
 cherries+=(LX_611)
 
+# [1/2] Camera button support
+cherries+=(CM_100375)
+
+# [2/2] Camera button support
+cherries+=(CM_100377)
+
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
