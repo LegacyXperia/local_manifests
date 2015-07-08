@@ -24,9 +24,6 @@ cherries+=(CM_81758)
 # Only try to add data_extra when we want to add it
 cherries+=(CM_97855)
 
-# policy: Show a simple dialog about optimizing apps
-cherries+=(CM_101243)
-
 # Fix mounting of ext4 formated sdcards
 cherries+=(CM_101070)
 
@@ -60,7 +57,7 @@ cherries+=(CM_101198)
 # sensors: as3676: Remove unused var
 cherries+=(CM_101205)
 
-# sensors: als: Align cflags with upstream
+# sensors: as3676: Align cflags with upstream
 cherries+=(CM_101200)
 
 # sensors: as3676: Correct default light range
@@ -74,6 +71,9 @@ cherries+=(CM_100375)
 
 # [2/2] Camera button support
 cherries+=(CM_100377)
+
+# msm7x30-common: Decrease zRAM size to 128MB
+cherries+=(LX_643)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
