@@ -13,7 +13,7 @@ if [ -f ${android}/updates-local.sh ]; then
 fi
 
 # build: Add option to disable block-based ota
-cherries+=(CM_78849)
+cherries+=(CM_102837)
 
 # Revert "Revert "Reenable support for non-PIE executables""
 cherries+=(CM_92943)
@@ -66,14 +66,11 @@ cherries+=(CM_101210)
 # msm7x30-common: Remove as3676 max range
 cherries+=(LX_611)
 
-# [1/2] Camera button support
-cherries+=(CM_100375)
-
-# [2/2] Camera button support
-cherries+=(CM_100377)
-
 # msm7x30-common: Decrease zRAM size to 128MB
 cherries+=(LX_643)
+
+# defconfigs: semc: reduce common CMA area to 8MB
+cherries+=(LX_647)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
