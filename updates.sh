@@ -24,7 +24,10 @@ cherries+=(CM_81758)
 # Only try to add data_extra when we want to add it
 cherries+=(CM_97855)
 
-# Fix mounting of ext4 formated sdcards
+# Fix mounting of non-FAT formatted SD cards (1/2)
+cherries+=(CM_103200)
+
+# Fix mounting of non-FAT formatted SD cards (2/2)
 cherries+=(CM_101070)
 
 # sensors: sharp_gp2: Support the upstream gp2a kernel driver
@@ -65,9 +68,6 @@ cherries+=(CM_101210)
 
 # msm7x30-common: Remove as3676 max range
 cherries+=(LX_611)
-
-# msm7x30-common: Decrease zRAM size to 128MB
-cherries+=(LX_643)
 
 # defconfigs: semc: reduce common CMA area to 8MB
 cherries+=(LX_647)
