@@ -27,6 +27,30 @@ cherries+=(CM_97855)
 # defconfigs: semc: reduce common CMA area to 8MB
 cherries+=(LX_647)
 
+# libstagefright: Add legacy LPAPlayer
+cherries+=(CM_103507)
+
+# audio: Add A2DP notification support
+cherries+=(CM_103509)
+
+# framework/av: Add Usb AoA v2.0 support
+cherries+=(CM_103510)
+
+# libstagefright: Convert mono to stereo for LPA clips
+cherries+=(CM_103511)
+
+# libstagefright: Stability issue with LPA play back.
+cherries+=(CM_103512)
+
+# frameworks/av: Fix playback for LPA audio when using gapless api
+cherries+=(CM_103513)
+
+# libstagefright: Fix LPA default min duration
+cherries+=(CM_103555)
+
+# libstagefright: Disable LPAPlayer verbose logging
+cherries+=(CM_103556)
+
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
