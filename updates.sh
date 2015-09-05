@@ -18,26 +18,14 @@ cherries+=(CM_66213)
 # libstagefright: Fix video encoder input buffer
 cherries+=(CM_66214)
 
-# audio: Add A2DP notification support
-cherries+=(CM_63131)
+# libmedia: Give AudioTrack a higher priority
+cherries+=(CM_108644)
 
-# framework/av: Add Usb AoA v2.0 support
-cherries+=(CM_63410)
+# power: fix interactive tunables
+cherries+=(LX_770)
 
-# libstagefright: Convert mono to stereo for LPA clips
-cherries+=(CM_63411)
-
-# libstagefright: Stability issue with LPA play back.
-cherries+=(CM_63412)
-
-# frameworks/av: Fix playback for LPA audio when using gapless api
-cherries+=(CM_103480)
-
-# libstagefright: Fix LPA default min duration
-cherries+=(CM_103549)
-
-# libstagefright: Disable LPAPlayer verbose logging
-cherries+=(CM_103550)
+# msm7x30: Switch to CFQ
+cherries+=(LX_771)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
