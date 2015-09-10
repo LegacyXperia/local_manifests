@@ -42,6 +42,12 @@ cherries+=(CM_103513)
 # libstagefright: Disable LPAPlayer verbose logging
 cherries+=(CM_103556)
 
+# libstagefright: Update LPAPlayer callbacks
+cherries+=(CM_109096)
+
+# msm7x30-common: Re-enable LPA
+cherries+=(LX_691)
+
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
