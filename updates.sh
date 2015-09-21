@@ -42,9 +42,6 @@ cherries+=(CM_103550)
 # libstagefright: Update LPAPlayer callbacks
 cherries+=(CM_109071)
 
-# msm7x30-common: Re-enable LPA
-cherries+=(LX_670)
-
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
