@@ -36,6 +36,8 @@
   <project name="msm7x30/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x30" remote="msm7x30" revision="cm-13.0-caf-7x30" />
 
   <!-- CyanogenMod projects -->
+  <project name="CyanogenMod/android_external_stlport" path="external/stlport" />
+  <project name="CyanogenMod/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" />
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
 
   <!-- AOSP projects-->
