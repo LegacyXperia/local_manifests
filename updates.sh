@@ -21,6 +21,15 @@ cherries+=(CM_117733)
 # arm: Allow disabling PIE for dynamically linked executables
 cherries+=(CM_123032)
 
+# recovery: Add wipe system partition option
+cherries+=(CM_129827)
+
+# Add wakelock option for flashlight
+cherries+=(CM_131995)
+
+# msm7x30: Add SystemUI torch overlay
+cherries+=(LX_1126)
+
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
