@@ -21,11 +21,11 @@ cherries+=(CM_117733)
 # arm: Allow disabling PIE for dynamically linked executables
 cherries+=(CM_123032)
 
-# recovery: Add wipe system partition option
-cherries+=(CM_129827)
+# policy: Show a simple dialog about optimizing apps
+cherries+=(CM_131627)
 
-# datspinner: low resource fake material progress spinner
-cherries+=(LX_1117)
+# Barrier only messages shouldn't prevent the idle handlers from running
+cherries+=(CM_131628)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
