@@ -21,12 +21,6 @@ cherries+=(CM_117733)
 # arm: Allow disabling PIE for dynamically linked executables
 cherries+=(CM_123032)
 
-# policy: Show a simple dialog about optimizing apps
-cherries+=(CM_131627)
-
-# Barrier only messages shouldn't prevent the idle handlers from running
-cherries+=(CM_131628)
-
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
