@@ -4,42 +4,42 @@
           fetch="https://github.com"
           review="review.msm7x30.org" />
 
-  <project name="LegacyXperia/local_manifests" path="vendor/extra" remote="msm7x30" />
+  <project name="LegacyXperia/local_manifests" path="vendor/extra" remote="msm7x30" revision="cm-14.0" />
 
   <!-- LegacyXperia projects -->
-  <project name="LegacyXperia/android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" remote="msm7x30" />
+  <project name="LegacyXperia/android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" remote="msm7x30" revision="cm-14.0" />
 
-  <project name="LegacyXperia/android_device_semc_mogami-common" path="device/semc/mogami-common" remote="msm7x30" />
-  <project name="LegacyXperia/android_device_semc_anzu" path="device/semc/anzu" remote="msm7x30" />
-  <project name="LegacyXperia/android_device_semc_coconut" path="device/semc/coconut" remote="msm7x30" />
-  <project name="LegacyXperia/android_device_semc_haida" path="device/semc/haida" remote="msm7x30" />
-  <project name="LegacyXperia/android_device_semc_hallon" path="device/semc/hallon" remote="msm7x30" />
-  <project name="LegacyXperia/android_device_semc_iyokan" path="device/semc/iyokan" remote="msm7x30" />
-  <project name="LegacyXperia/android_device_semc_mango" path="device/semc/mango" remote="msm7x30" />
-  <project name="LegacyXperia/android_device_semc_satsuma" path="device/semc/satsuma" remote="msm7x30" />
-  <project name="LegacyXperia/android_device_semc_smultron" path="device/semc/smultron" remote="msm7x30" />
-  <project name="LegacyXperia/android_device_semc_urushi" path="device/semc/urushi" remote="msm7x30" />
+  <project name="LegacyXperia/android_device_semc_mogami-common" path="device/semc/mogami-common" remote="msm7x30" revision="cm-14.0" />
+  <project name="LegacyXperia/android_device_semc_anzu" path="device/semc/anzu" remote="msm7x30" revision="cm-14.0" />
+  <project name="LegacyXperia/android_device_semc_coconut" path="device/semc/coconut" remote="msm7x30" revision="cm-14.0" />
+  <project name="LegacyXperia/android_device_semc_haida" path="device/semc/haida" remote="msm7x30" revision="cm-14.0" />
+  <project name="LegacyXperia/android_device_semc_hallon" path="device/semc/hallon" remote="msm7x30" revision="cm-14.0" />
+  <project name="LegacyXperia/android_device_semc_iyokan" path="device/semc/iyokan" remote="msm7x30" revision="cm-14.0" />
+  <project name="LegacyXperia/android_device_semc_mango" path="device/semc/mango" remote="msm7x30" revision="cm-14.0" />
+  <project name="LegacyXperia/android_device_semc_satsuma" path="device/semc/satsuma" remote="msm7x30" revision="cm-14.0" />
+  <project name="LegacyXperia/android_device_semc_smultron" path="device/semc/smultron" remote="msm7x30" revision="cm-14.0" />
+  <project name="LegacyXperia/android_device_semc_urushi" path="device/semc/urushi" remote="msm7x30" revision="cm-14.0" />
 
-  <project name="LegacyXperia/android_device_semc_zeus-common" path="device/semc/zeus-common" remote="msm7x30" />
-  <project name="LegacyXperia/android_device_semc_phoenix" path="device/semc/phoenix" remote="msm7x30" />
-  <project name="LegacyXperia/android_device_semc_zeus" path="device/semc/zeus" remote="msm7x30" />
+  <project name="LegacyXperia/android_device_semc_zeus-common" path="device/semc/zeus-common" remote="msm7x30" revision="cm-14.0" />
+  <project name="LegacyXperia/android_device_semc_phoenix" path="device/semc/phoenix" remote="msm7x30" revision="cm-14.0" />
+  <project name="LegacyXperia/android_device_semc_zeus" path="device/semc/zeus" remote="msm7x30" revision="cm-14.0" />
 
-  <project name="LegacyXperia/android_kernel_semc_msm7x30" path="kernel/semc/msm7x30" remote="msm7x30" />
+  <project name="LegacyXperia/android_kernel_semc_msm7x30" path="kernel/semc/msm7x30" remote="msm7x30" revision="cm-14.0" />
 
-  <project name="LegacyXperia/proprietary_vendor_semc" path="vendor/semc" remote="msm7x30" />
+  <project name="LegacyXperia/proprietary_vendor_semc" path="vendor/semc" remote="msm7x30" revision="cm-14.0" />
 
   <!-- msm7x30 projects -->
-  <project name="msm7x30/android_device_qcom_msm7x30-common" path="device/qcom/msm7x30-common" remote="msm7x30" />
+  <project name="msm7x30/android_device_qcom_msm7x30-common" path="device/qcom/msm7x30-common" remote="msm7x30" revision="cm-14.0" />
 
-  <project name="msm7x30/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm7x30" remote="msm7x30" revision="cm-13.0-caf-7x30" />
-  <project name="msm7x30/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm7x30" remote="msm7x30" revision="cm-13.0-caf-7x30" />
-  <project name="msm7x30/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x30" remote="msm7x30" revision="cm-13.0-caf-7x30" />
+  <project name="msm7x30/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm7x30" remote="msm7x30" revision="cm-14.0-caf-7x30" />
+  <project name="msm7x30/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm7x30" remote="msm7x30" revision="cm-14.0-caf-7x30" />
+  <project name="msm7x30/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x30" remote="msm7x30" revision="cm-14.0-caf-7x30" />
 
   <!-- CyanogenMod projects -->
-  <project name="CyanogenMod/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" />
-  <project name="CyanogenMod/android_external_stlport" path="external/stlport" />
+  <project name="CyanogenMod/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" revision="cm-13.0" />
+  <project name="CyanogenMod/android_external_stlport" path="external/stlport" revision="cm-14.0" />
 
-  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
+  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" revision="cm-14.0" />
 
   <!-- AOSP projects-->
   <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="master" />
