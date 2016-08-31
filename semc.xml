@@ -36,10 +36,10 @@
   <project name="msm7x30/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x30" remote="msm7x30" revision="cm-14.0-caf-7x30" />
 
   <!-- CyanogenMod projects -->
-  <project name="CyanogenMod/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" revision="cm-13.0" />
-  <project name="CyanogenMod/android_external_stlport" path="external/stlport" revision="cm-14.0" />
+  <project name="CyanogenMod/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="cm-14.0" />
+  <project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" revision="cm-14.0" />
 
-  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" revision="cm-14.0" />
+  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" remote="github" revision="cm-14.0" />
 
   <!-- AOSP projects-->
   <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="master" />
