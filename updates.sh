@@ -24,9 +24,6 @@ cherries+=(CM_164317)
 # arm: Allow disabling PIE for dynamically linked executables
 cherries+=(CM_164318)
 
-# bt: Select H4 HCI driver when QC bluetooth prop is unset
-cherries+=(CM_164190)
-
 # msm7x30: Allow text relocations
 cherries+=(LX_1348)
 
