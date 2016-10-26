@@ -16,10 +16,10 @@ fi
 cherries+=(CM_164156)
 
 # Revert "Revert "Reenable support for non-PIE executables""
-cherries+=(CM_164317)
+cherries+=(CM_167387)
 
 # arm: Allow disabling PIE for dynamically linked executables
-cherries+=(CM_164318)
+cherries+=(CM_167388)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
