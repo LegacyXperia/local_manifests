@@ -1,7 +1,7 @@
-CyanogenMod 13.0 for SEMC 2011 devices
+CyanogenMod 14.1 for SEMC 2011 devices
 ===============
 
-Local manifest needed to build cm-13.0 for the Sony Ericsson 2011 phone line.
+Local manifest needed to build cm-14.1 for the Sony Ericsson 2011 phone line.
 
 Instructions:
 -------------
