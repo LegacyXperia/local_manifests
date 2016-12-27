@@ -13,13 +13,13 @@ if [ -f ${android}/updates-local.sh ]; then
 fi
 
 # sad selinux 2002
-cherries+=(CM_164156)
+cherries+=(LAOS_164156)
 
 # Revert "Revert "Reenable support for non-PIE executables""
-cherries+=(CM_167387)
+cherries+=(LAOS_167387)
 
 # arm: Allow disabling PIE for dynamically linked executables
-cherries+=(CM_167388)
+cherries+=(LAOS_167388)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"

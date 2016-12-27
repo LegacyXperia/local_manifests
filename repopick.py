@@ -197,8 +197,8 @@ if args.topic:
     for argument in args.topic:
         gerrit, tag = argument.rsplit('_', 1)
 
-        if 'CM' in gerrit:
-            url = 'http://review.cyanogenmod.org/changes/?q=topic:%s' % tag
+        if 'LAOS' in gerrit:
+            url = 'http://review.lineageos.org/changes/?q=topic:%s' % tag
         elif 'LX' in gerrit:
             url = 'http://review.msm7x30.org/changes/?q=topic:%s' % tag
 
@@ -237,8 +237,8 @@ if args.topic:
 if args.query:
     for argument in args.query:
         gerrit, pquery = argument.rsplit('_', 1)
-        if 'CM' in gerrit:
-            url = 'http://review.cyanogenmod.org/changes/?q=%s' % pquery
+        if 'LAOS' in gerrit:
+            url = 'http://review.lineageos.org/changes/?q=%s' % pquery
         elif 'LX' in gerrit:
             url = 'http://review.msm7x30.org/changes/?q=%s' % pquery
         if args.verbose:
@@ -313,8 +313,8 @@ for argument in args.change_number:
     # gerrit returns two lines, a magic string and then valid JSON:
     #   )]}'
     #   [ ... valid JSON ... ]
-    if 'CM' in gerrit:
-        url = 'http://review.cyanogenmod.org/changes/?q={change}&o={query_revision}&o=CURRENT_COMMIT&pp=0'.format(change=change, query_revision=query_revision)
+    if 'LAOS' in gerrit:
+        url = 'http://review.lineageos.org/changes/?q={change}&o={query_revision}&o=CURRENT_COMMIT&pp=0'.format(change=change, query_revision=query_revision)
     elif 'LX' in gerrit:
         url = 'http://review.msm7x30.org/changes/?q={change}&o={query_revision}&o=CURRENT_COMMIT&pp=0'.format(change=change, query_revision=query_revision)
     if args.verbose:
@@ -443,7 +443,7 @@ for argument in args.change_number:
         print('--> Committer:     %s <%s> %s' % (committer_name, committer_email, committer_date))
 
     # Try fetching from GitHub first
-    if 'CM' in gerrit:
+    if 'LAOS' in gerrit:
         github_remote = 'github'
     elif 'LX' in gerrit:
         github_remote = 'msm7x30'
