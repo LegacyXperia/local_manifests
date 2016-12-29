@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- LegacyXperia extras -->
-  <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
+  <remove-project name="LineageOS/android_packages_apps_CMUpdater" />
   <project name="LegacyXperia/android_packages_apps_LegacyXperiaCenter" path="packages/apps/LegacyXperiaCenter" remote="msm7x30" />
 </manifest>

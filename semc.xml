@@ -28,6 +28,6 @@
 
   <project name="LegacyXperia/proprietary_vendor_semc" path="vendor/semc" remote="msm7x30" />
 
-  <!-- CyanogenMod projects -->
-  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
+  <!-- LineageOS projects -->
+  <project name="LineageOS/android_hardware_sony_DASH" path="hardware/sony/DASH" />
 </manifest>

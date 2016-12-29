@@ -1,7 +1,7 @@
-CyanogenMod 11.0 for SEMC 2011 devices
+LineageOS 11.0 for SEMC 2011 devices
 ===============
 
-Local manifest needed to build cm-11.0 for the Sony Ericsson 2011 phone line.
+Local manifest needed to build lineage-11.0 for the Sony Ericsson 2011 phone line.
 
 Instructions:
 -------------

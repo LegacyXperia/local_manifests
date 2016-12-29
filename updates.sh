@@ -13,52 +13,52 @@ if [ -f ${android}/updates-local.sh ]; then
 fi
 
 # libstagefright: Allow using camera recording buffer as input for encoder
-cherries+=(CM_66213)
+cherries+=(LAOS_62450)
 
 # libstagefright: Fix video encoder input buffer
-cherries+=(CM_66214)
+cherries+=(LAOS_63723)
 
 # audio: Add A2DP notification support
-cherries+=(CM_63131)
+cherries+=(LAOS_63465)
 
 # framework/av: Add Usb AoA v2.0 support
-cherries+=(CM_63410)
+cherries+=(LAOS_63464)
 
 # libstagefright: Convert mono to stereo for LPA clips
-cherries+=(CM_63411)
+cherries+=(LAOS_63463)
 
 # libstagefright: Stability issue with LPA play back.
-cherries+=(CM_63412)
+cherries+=(LAOS_63462)
 
 # frameworks/av: Fix playback for LPA audio when using gapless api
-cherries+=(CM_103480)
+cherries+=(LAOS_63573)
 
 # libstagefright: Fix LPA default min duration
-cherries+=(CM_103549)
+cherries+=(LAOS_63572)
 
 # libstagefright: Disable LPAPlayer verbose logging
-cherries+=(CM_103550)
+cherries+=(LAOS_63571)
 
 # libstagefright: Update LPAPlayer callbacks
-cherries+=(CM_109071)
+cherries+=(LAOS_63478)
 
 # input: Set explicit ioprio
-cherries+=(CM_123930)
+cherries+=(LAOS_67360)
 
 # surfaceflinger: Set explicit ioprio where required
-cherries+=(CM_123932)
+cherries+=(LAOS_70229)
 
 # display: Set thread priority using cutils
-cherries+=(CM_123933)
+cherries+=(LAOS_75249)
 
 # hwc: Set ioprio for vsync thread
-cherries+=(CM_123934)
+cherries+=(LAOS_75248)
 
 # Set IO scheduler using persist property
-cherries+=(CM_123935)
+cherries+=(LAOS_130381)
 
 # cutils: Squashed backport of BFQIO cgroups support
-cherries+=(CM_123936)
+cherries+=(LAOS_143080)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
