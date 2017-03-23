@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="omnirom"
+          fetch="https://github.com/omnirom"
+          review="gerrit.omnirom.org" />
+
+  <!-- TWRP -->
+  <project path="bootable/recovery-twrp" name="android_bootable_recovery" remote="omnirom" revision="android-7.1" />
+</manifest>
