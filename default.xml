@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch=".." />
+
+  <default revision="master"
+           remote="github"
+           sync-j="4" />
+
+  <project name="LegacyXperia/android_bootable_recovery" />
+  <project name="LegacyXperia/android_device_semc_anzu" />
+  <project name="LegacyXperia/android_device_semc_coconut" />
+  <project name="LegacyXperia/android_device_semc_haida" />
+  <project name="LegacyXperia/android_device_semc_hallon" />
+  <project name="LegacyXperia/android_device_semc_iyokan" />
+  <project name="LegacyXperia/android_device_semc_mango" />
+  <project name="LegacyXperia/android_device_semc_mogami-common" />
+  <project name="LegacyXperia/android_device_semc_msm7x30-common" />
+  <project name="LegacyXperia/android_device_semc_phoenix" />
+  <project name="LegacyXperia/android_device_semc_satsuma" />
+  <project name="LegacyXperia/android_device_semc_smultron" />
+  <project name="LegacyXperia/android_device_semc_urushi" />
+  <project name="LegacyXperia/android_device_semc_zeus" />
+  <project name="LegacyXperia/android_device_semc_zeusc" />
+  <project name="LegacyXperia/android_device_semc_zeus-common" />
+  <project name="LegacyXperia/android_frameworks_av" />
+  <project name="LegacyXperia/android_frameworks_base" />
+  <project name="LegacyXperia/android_frameworks_native" />
+  <project name="LegacyXperia/android_hardware_msm7k" />
+  <project name="LegacyXperia/android_hardware_qcom_audio-caf" />
+  <project name="LegacyXperia/android_hardware_qcom_display-caf" />
+  <project name="LegacyXperia/android_hardware_qcom_display-legacy" />
+  <project name="LegacyXperia/android_hardware_qcom_gps" />
+  <project name="LegacyXperia/android_hardware_qcom_media-caf" />
+  <project name="LegacyXperia/android_hardware_qcom_media-legacy" />
+  <project name="LegacyXperia/android_hardware_ti_wlan" />
+  <project name="LegacyXperia/android_kernel_semc_msm7x30" />
+  <project name="LegacyXperia/android_packages_apps_Gallery2" />
+  <project name="LegacyXperia/android_packages_apps_LegacyXperiaCenter" />
+  <project name="LegacyXperia/android_packages_apps_Settings" />
+  <project name="LegacyXperia/android_system_core" />
+  <project name="LegacyXperia/LegacyXperia.github.io" />
+  <project name="LegacyXperia/local_manifests" />
+  <project name="LegacyXperia/msm7x30-3.4.x-nAa" />
+  <project name="LegacyXperia/proprietary_vendor_semc" />
+  <project name="LegacyXperia/Wiki" />
+</manifest>
