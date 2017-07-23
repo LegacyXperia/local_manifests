@@ -6,4 +6,6 @@
 
   <!-- TWRP -->
   <project path="bootable/recovery-twrp" name="android_bootable_recovery" remote="omnirom" revision="android-7.1" />
+
+  <project name="LineageOS/android_external_busybox" path="external/busybox" />
 </manifest>
