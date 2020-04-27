@@ -13,13 +13,13 @@ if [ -f ${android}/updates-local.sh ]; then
 fi
 
 # Use RECOVERY_PRE_COMMAND before calling __reboot() recovery
-cherries+=(CM_115693)
+cherries+=(LAOS_142996)
 
 # Revert "Revert "Reenable support for non-PIE executables""
-cherries+=(CM_117733)
+cherries+=(LAOS_1259)
 
 # arm: Allow disabling PIE for dynamically linked executables
-cherries+=(CM_123032)
+cherries+=(LAOS_3026)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
